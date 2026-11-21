@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <IsPackable>false</IsPackable>
+        <PublishAot>true</PublishAot>
+        <OtherFlags>$(OtherFlags) --reflectionfree</OtherFlags>
+        <TrimmerSingleWarn>false</TrimmerSingleWarn>
+        <IlcTreatWarningsAsErrors>false</IlcTreatWarningsAsErrors>
+        <ILLinkTreatWarningsAsErrors>false</ILLinkTreatWarningsAsErrors>
+        <BenchScripts>true</BenchScripts>
+    </PropertyGroup>
+
+    <Import Project="Resources.props" />
+
+    <ItemGroup Condition="'$(BenchImpl)' == 'native'">
+        <PackageReference Include="HarfBuzzSharp.NativeAssets.macOS" />
+        <PackageReference Include="HarfBuzzSharp.NativeAssets.Linux" />
+        <PackageReference Include="HarfBuzzSharp.NativeAssets.Win32" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Include="Protocol.fs" />
+        <Compile Include="Impl.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../src/Farfbuzz/Farfbuzz.fsproj" />
+    </ItemGroup>
+</Project>

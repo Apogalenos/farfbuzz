@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <IsPackable>false</IsPackable>
+        <ServerGarbageCollection>false</ServerGarbageCollection>
+        <TieredPGO>true</TieredPGO>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Corpus.fs" />
+        <Compile Include="NativeShaping.fs" />
+        <Compile Include="TextFormats.fs" />
+        <Compile Include="Toolkit.fs" />
+        <Compile Include="BasicShapeBench.fs" />
+        <Compile Include="LayoutShape.fs" />
+        <Compile Include="BatchShape.fs" />
+        <Compile Include="AllocPerGlyph.fs" />
+        <Compile Include="GeneralShape.fs" />
+        <Compile Include="VerifyCost.fs" />
+        <Compile Include="../../tests/Farfbuzz.Tests/Aat/AnchorTables.fs" Link="AnchorTables.fs" />
+        <Compile Include="RunPassCost.fs" />
+        <Compile Include="AatCost.fs" />
+        <Compile Include="AatShape.fs" />
+        <Compile Include="UpstreamPairs.fs" />
+        <Compile Include="UpstreamShape.fs" />
+        <Compile Include="ComplexShape.fs" />
+        <Compile Include="UpstreamFont.fs" />
+        <Compile Include="UpstreamOt.fs" />
+        <Compile Include="LayoutLoad.fs" />
+        <Compile Include="ShapeProfile.fs" />
+        <Compile Include="StepCost.fs" />
+        <Compile Include="CffExtents.fs" />
+        <Compile Include="FontOps.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BenchmarkDotNet" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../src/Farfbuzz/Farfbuzz.fsproj" />
+        <ProjectReference Include="../../tests/Farfbuzz.Oracle/Farfbuzz.Oracle.fsproj" />
+    </ItemGroup>
+</Project>

@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 1316" width="880" height="1316" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif">
+  <title id="t">Farfbuzz time against HarfBuzz and HarfBuzzSharp, text by text</title>
+  <desc id="d">Lower is better: bars shorter than the 1× line mean Farfbuzz takes less time. Roboto, Greek polytonic: 0.50× HarfBuzz 15.1.0 on .NET 10, 0.45× the HarfBuzzSharp 14.4.0 package on NativeAOT; Roboto, Mongolian Cyrillic: 0.55× HarfBuzz 15.1.0 on .NET 10, 0.46× the HarfBuzzSharp 14.4.0 package on NativeAOT; Roboto, Russian: 0.56× HarfBuzz 15.1.0 on .NET 10, 0.49× the HarfBuzzSharp 14.4.0 package on NativeAOT; Roboto, Greek: 0.57× HarfBuzz 15.1.0 on .NET 10, 0.52× the HarfBuzzSharp 14.4.0 package on NativeAOT; Roboto, English words: 0.64× HarfBuzz 15.1.0 on .NET 10, 0.40× the HarfBuzzSharp 14.4.0 package on NativeAOT; Roboto, Polish: 0.66× HarfBuzz 15.1.0 on .NET 10, 0.27× the HarfBuzzSharp 14.4.0 package on NativeAOT; Roboto, Norwegian: 0.71× HarfBuzz 15.1.0 on .NET 10, 0.29× the HarfBuzzSharp 14.4.0 package on NativeAOT; Roboto, English prose: 0.74× HarfBuzz 15.1.0 on .NET 10, 0.33× the HarfBuzzSharp 14.4.0 package on NativeAOT; Roboto, Hungarian: 0.75× HarfBuzz 15.1.0 on .NET 10, 0.29× the HarfBuzzSharp 14.4.0 package on NativeAOT; Source Serif variable: 0.76× HarfBuzz 15.1.0 on .NET 10, 0.72× the HarfBuzzSharp 14.4.0 package on NativeAOT; Noto Sans SC, Chinese: 0.86× HarfBuzz 15.1.0 on .NET 10, 1.08× the HarfBuzzSharp 14.4.0 package on NativeAOT; Marck Script, Russian cursive: 0.96× HarfBuzz 15.1.0 on .NET 10, 0.84× the HarfBuzzSharp 14.4.0 package on NativeAOT; Noto Sans Georgian: 0.96× HarfBuzz 15.1.0 on .NET 10, 0.74× the HarfBuzzSharp 14.4.0 package on NativeAOT; Noto Sans KR, Korean: 1.00× HarfBuzz 15.1.0 on .NET 10, 1.19× the HarfBuzzSharp 14.4.0 package on NativeAOT; Noto Sans JP, Japanese: 1.04× HarfBuzz 15.1.0 on .NET 10, 1.12× the HarfBuzzSharp 14.4.0 package on NativeAOT; Gulzar, Persian prose: 1.17× HarfBuzz 15.1.0 on .NET 10, 0.40× the HarfBuzzSharp 14.4.0 package on NativeAOT; Amiri, Persian prose: 1.19× HarfBuzz 15.1.0 on .NET 10, 1.01× the HarfBuzzSharp 14.4.0 package on NativeAOT; Noto Sans Thai: 1.25× HarfBuzz 15.1.0 on .NET 10, 1.35× the HarfBuzzSharp 14.4.0 package on NativeAOT; Noto Sans Armenian: 1.26× HarfBuzz 15.1.0 on .NET 10, 1.35× the HarfBuzzSharp 14.4.0 package on NativeAOT; Nastaliq, Persian prose: 1.27× HarfBuzz 15.1.0 on .NET 10, 0.67× the HarfBuzzSharp 14.4.0 package on NativeAOT; Gulzar, Persian words: 1.29× HarfBuzz 15.1.0 on .NET 10, 0.43× the HarfBuzzSharp 14.4.0 package on NativeAOT; Noto Sans Duployan: 1.41× HarfBuzz 15.1.0 on .NET 10, 0.69× the HarfBuzzSharp 14.4.0 package on NativeAOT; Noto Sans Devanagari: 1.42× HarfBuzz 15.1.0 on .NET 10, 1.28× the HarfBuzzSharp 14.4.0 package on NativeAOT; Nastaliq, Persian words: 1.47× HarfBuzz 15.1.0 on .NET 10, 0.76× the HarfBuzzSharp 14.4.0 package on NativeAOT; Noto Naskh Arabic: 1.61× HarfBuzz 15.1.0 on .NET 10, 1.80× the HarfBuzzSharp 14.4.0 package on NativeAOT.</desc>
+  <rect width="880" height="1316" rx="22" fill="#1c1c1e"/>
+  <text x="40" y="52" font-size="22" font-weight="600" fill="#f5f5f7" text-anchor="start" letter-spacing="-0.2">Farfbuzz time, text by text</text>
+  <text x="40" y="76" font-size="14" font-weight="400" fill="#a1a1a6" text-anchor="start">Lower is better. Farfbuzz time divided by the other library’s time: left of the 1× line, Farfbuzz is faster</text>
+  <rect x="300" y="102" width="290.0" height="1102" fill="#8F7BFF" fill-opacity="0.12"/>
+  <rect x="300.0" y="102" width="1" height="1102" fill="#3a3a3c"/>
+  <text x="300.0" y="1226" font-size="12" font-weight="400" fill="#a1a1a6" text-anchor="middle">0</text>
+  <rect x="445.0" y="102" width="1" height="1102" fill="#3a3a3c"/>
+  <text x="445.0" y="1226" font-size="12" font-weight="400" fill="#a1a1a6" text-anchor="middle">0.5×</text>
+  <rect x="589.5" y="102" width="2" height="1102" fill="#f5f5f7"/>
+  <text x="590.0" y="1226" font-size="12" font-weight="600" fill="#f5f5f7" text-anchor="middle">1×</text>
+  <rect x="735.0" y="102" width="1" height="1102" fill="#3a3a3c"/>
+  <text x="735.0" y="1226" font-size="12" font-weight="400" fill="#a1a1a6" text-anchor="middle">1.5×</text>
+  <text x="445.0" y="1244" font-size="12" font-weight="600" fill="#8F7BFF" text-anchor="middle">Farfbuzz faster</text>
+  <text x="677.0" y="1244" font-size="12" font-weight="600" fill="#a1a1a6" text-anchor="middle">Farfbuzz slower</text>
+  <text x="40" y="133" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, Greek polytonic</text>
+  <path d="M300 112 H442.0 Q445.0 112 445.0 115 V125 Q445.0 128 442.0 128 H300 Z" fill="#8F7BFF"/>
+  <text x="453.0" y="125" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.50×</text>
+  <path d="M300 131 H427.5 Q430.5 131 430.5 134 V144 Q430.5 147 427.5 147 H300 Z" fill="#3CC9B4"/>
+  <text x="438.5" y="144" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.45×</text>
+  <text x="40" y="177" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, Mongolian Cyrillic</text>
+  <path d="M300 156 H456.5 Q459.5 156 459.5 159 V169 Q459.5 172 456.5 172 H300 Z" fill="#8F7BFF"/>
+  <text x="467.5" y="169" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.55×</text>
+  <path d="M300 175 H430.4 Q433.4 175 433.4 178 V188 Q433.4 191 430.4 191 H300 Z" fill="#3CC9B4"/>
+  <text x="441.4" y="188" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.46×</text>
+  <text x="40" y="221" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, Russian</text>
+  <path d="M300 200 H459.4 Q462.4 200 462.4 203 V213 Q462.4 216 459.4 216 H300 Z" fill="#8F7BFF"/>
+  <text x="470.4" y="213" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.56×</text>
+  <path d="M300 219 H439.1 Q442.1 219 442.1 222 V232 Q442.1 235 439.1 235 H300 Z" fill="#3CC9B4"/>
+  <text x="450.1" y="232" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.49×</text>
+  <text x="40" y="265" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, Greek</text>
+  <path d="M300 244 H462.3 Q465.3 244 465.3 247 V257 Q465.3 260 462.3 260 H300 Z" fill="#8F7BFF"/>
+  <text x="473.3" y="257" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.57×</text>
+  <path d="M300 263 H447.8 Q450.8 263 450.8 266 V276 Q450.8 279 447.8 279 H300 Z" fill="#3CC9B4"/>
+  <text x="458.8" y="276" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.52×</text>
+  <text x="40" y="309" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, English words</text>
+  <path d="M300 288 H482.6 Q485.6 288 485.6 291 V301 Q485.6 304 482.6 304 H300 Z" fill="#8F7BFF"/>
+  <text x="493.6" y="301" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.64×</text>
+  <path d="M300 307 H413.0 Q416.0 307 416.0 310 V320 Q416.0 323 413.0 323 H300 Z" fill="#3CC9B4"/>
+  <text x="424.0" y="320" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.40×</text>
+  <text x="40" y="353" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, Polish</text>
+  <path d="M300 332 H488.4 Q491.4 332 491.4 335 V345 Q491.4 348 488.4 348 H300 Z" fill="#8F7BFF"/>
+  <text x="499.4" y="345" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.66×</text>
+  <path d="M300 351 H375.3 Q378.3 351 378.3 354 V364 Q378.3 367 375.3 367 H300 Z" fill="#3CC9B4"/>
+  <text x="386.3" y="364" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.27×</text>
+  <text x="40" y="397" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, Norwegian</text>
+  <path d="M300 376 H502.9 Q505.9 376 505.9 379 V389 Q505.9 392 502.9 392 H300 Z" fill="#8F7BFF"/>
+  <text x="513.9" y="389" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.71×</text>
+  <path d="M300 395 H381.1 Q384.1 395 384.1 398 V408 Q384.1 411 381.1 411 H300 Z" fill="#3CC9B4"/>
+  <text x="392.1" y="408" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.29×</text>
+  <text x="40" y="441" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, English prose</text>
+  <path d="M300 420 H511.6 Q514.6 420 514.6 423 V433 Q514.6 436 511.6 436 H300 Z" fill="#8F7BFF"/>
+  <text x="522.6" y="433" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.74×</text>
+  <path d="M300 439 H392.7 Q395.7 439 395.7 442 V452 Q395.7 455 392.7 455 H300 Z" fill="#3CC9B4"/>
+  <text x="403.7" y="452" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.33×</text>
+  <text x="40" y="485" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, Hungarian</text>
+  <path d="M300 464 H514.5 Q517.5 464 517.5 467 V477 Q517.5 480 514.5 480 H300 Z" fill="#8F7BFF"/>
+  <text x="525.5" y="477" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.75×</text>
+  <path d="M300 483 H381.1 Q384.1 483 384.1 486 V496 Q384.1 499 381.1 499 H300 Z" fill="#3CC9B4"/>
+  <text x="392.1" y="496" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.29×</text>
+  <text x="40" y="529" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Source Serif variable</text>
+  <path d="M300 508 H517.4 Q520.4 508 520.4 511 V521 Q520.4 524 517.4 524 H300 Z" fill="#8F7BFF"/>
+  <text x="528.4" y="521" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.76×</text>
+  <path d="M300 527 H505.8 Q508.8 527 508.8 530 V540 Q508.8 543 505.8 543 H300 Z" fill="#3CC9B4"/>
+  <text x="516.8" y="540" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.72×</text>
+  <text x="40" y="573" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans SC, Chinese</text>
+  <path d="M300 552 H546.4 Q549.4 552 549.4 555 V565 Q549.4 568 546.4 568 H300 Z" fill="#8F7BFF"/>
+  <text x="557.4" y="565" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.86×</text>
+  <path d="M300 571 H610.2 Q613.2 571 613.2 574 V584 Q613.2 587 610.2 587 H300 Z" fill="#3CC9B4"/>
+  <text x="621.2" y="584" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.08×</text>
+  <text x="40" y="617" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Marck Script, Russian cursive</text>
+  <path d="M300 596 H575.4 Q578.4 596 578.4 599 V609 Q578.4 612 575.4 612 H300 Z" fill="#8F7BFF"/>
+  <text x="586.4" y="609" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.96×</text>
+  <path d="M300 615 H540.6 Q543.6 615 543.6 618 V628 Q543.6 631 540.6 631 H300 Z" fill="#3CC9B4"/>
+  <text x="551.6" y="628" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.84×</text>
+  <text x="40" y="661" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans Georgian</text>
+  <path d="M300 640 H575.4 Q578.4 640 578.4 643 V653 Q578.4 656 575.4 656 H300 Z" fill="#8F7BFF"/>
+  <text x="586.4" y="653" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.96×</text>
+  <path d="M300 659 H511.6 Q514.6 659 514.6 662 V672 Q514.6 675 511.6 675 H300 Z" fill="#3CC9B4"/>
+  <text x="522.6" y="672" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.74×</text>
+  <text x="40" y="705" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans KR, Korean</text>
+  <path d="M300 684 H587.0 Q590.0 684 590.0 687 V697 Q590.0 700 587.0 700 H300 Z" fill="#8F7BFF"/>
+  <text x="598.0" y="697" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.00×</text>
+  <path d="M300 703 H642.1 Q645.1 703 645.1 706 V716 Q645.1 719 642.1 719 H300 Z" fill="#3CC9B4"/>
+  <text x="653.1" y="716" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.19×</text>
+  <text x="40" y="749" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans JP, Japanese</text>
+  <path d="M300 728 H598.6 Q601.6 728 601.6 731 V741 Q601.6 744 598.6 744 H300 Z" fill="#8F7BFF"/>
+  <text x="609.6" y="741" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.04×</text>
+  <path d="M300 747 H621.8 Q624.8 747 624.8 750 V760 Q624.8 763 621.8 763 H300 Z" fill="#3CC9B4"/>
+  <text x="632.8" y="760" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.12×</text>
+  <text x="40" y="793" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Gulzar, Persian prose</text>
+  <path d="M300 772 H636.3 Q639.3 772 639.3 775 V785 Q639.3 788 636.3 788 H300 Z" fill="#8F7BFF"/>
+  <text x="647.3" y="785" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.17×</text>
+  <path d="M300 791 H413.0 Q416.0 791 416.0 794 V804 Q416.0 807 413.0 807 H300 Z" fill="#3CC9B4"/>
+  <text x="424.0" y="804" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.40×</text>
+  <text x="40" y="837" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Amiri, Persian prose</text>
+  <path d="M300 816 H642.1 Q645.1 816 645.1 819 V829 Q645.1 832 642.1 832 H300 Z" fill="#8F7BFF"/>
+  <text x="653.1" y="829" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.19×</text>
+  <path d="M300 835 H589.9 Q592.9 835 592.9 838 V848 Q592.9 851 589.9 851 H300 Z" fill="#3CC9B4"/>
+  <text x="600.9" y="848" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.01×</text>
+  <text x="40" y="881" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans Thai</text>
+  <path d="M300 860 H659.5 Q662.5 860 662.5 863 V873 Q662.5 876 659.5 876 H300 Z" fill="#8F7BFF"/>
+  <text x="670.5" y="873" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.25×</text>
+  <path d="M300 879 H688.5 Q691.5 879 691.5 882 V892 Q691.5 895 688.5 895 H300 Z" fill="#3CC9B4"/>
+  <text x="699.5" y="892" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.35×</text>
+  <text x="40" y="925" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans Armenian</text>
+  <path d="M300 904 H662.4 Q665.4 904 665.4 907 V917 Q665.4 920 662.4 920 H300 Z" fill="#8F7BFF"/>
+  <text x="673.4" y="917" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.26×</text>
+  <path d="M300 923 H688.5 Q691.5 923 691.5 926 V936 Q691.5 939 688.5 939 H300 Z" fill="#3CC9B4"/>
+  <text x="699.5" y="936" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.35×</text>
+  <text x="40" y="969" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Nastaliq, Persian prose</text>
+  <path d="M300 948 H665.3 Q668.3 948 668.3 951 V961 Q668.3 964 665.3 964 H300 Z" fill="#8F7BFF"/>
+  <text x="676.3" y="961" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.27×</text>
+  <path d="M300 967 H491.3 Q494.3 967 494.3 970 V980 Q494.3 983 491.3 983 H300 Z" fill="#3CC9B4"/>
+  <text x="502.3" y="980" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.67×</text>
+  <text x="40" y="1013" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Gulzar, Persian words</text>
+  <path d="M300 992 H671.1 Q674.1 992 674.1 995 V1005 Q674.1 1008 671.1 1008 H300 Z" fill="#8F7BFF"/>
+  <text x="682.1" y="1005" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.29×</text>
+  <path d="M300 1011 H421.7 Q424.7 1011 424.7 1014 V1024 Q424.7 1027 421.7 1027 H300 Z" fill="#3CC9B4"/>
+  <text x="432.7" y="1024" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.43×</text>
+  <text x="40" y="1057" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans Duployan</text>
+  <path d="M300 1036 H705.9 Q708.9 1036 708.9 1039 V1049 Q708.9 1052 705.9 1052 H300 Z" fill="#8F7BFF"/>
+  <text x="716.9" y="1049" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.41×</text>
+  <path d="M300 1055 H497.1 Q500.1 1055 500.1 1058 V1068 Q500.1 1071 497.1 1071 H300 Z" fill="#3CC9B4"/>
+  <text x="508.1" y="1068" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.69×</text>
+  <text x="40" y="1101" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans Devanagari</text>
+  <path d="M300 1080 H708.8 Q711.8 1080 711.8 1083 V1093 Q711.8 1096 708.8 1096 H300 Z" fill="#8F7BFF"/>
+  <text x="719.8" y="1093" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.42×</text>
+  <path d="M300 1099 H668.2 Q671.2 1099 671.2 1102 V1112 Q671.2 1115 668.2 1115 H300 Z" fill="#3CC9B4"/>
+  <text x="679.2" y="1112" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.28×</text>
+  <text x="40" y="1145" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Nastaliq, Persian words</text>
+  <path d="M300 1124 H723.3 Q726.3 1124 726.3 1127 V1137 Q726.3 1140 723.3 1140 H300 Z" fill="#8F7BFF"/>
+  <text x="734.3" y="1137" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.47×</text>
+  <path d="M300 1143 H517.4 Q520.4 1143 520.4 1146 V1156 Q520.4 1159 517.4 1159 H300 Z" fill="#3CC9B4"/>
+  <text x="528.4" y="1156" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">0.76×</text>
+  <text x="40" y="1189" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Naskh Arabic</text>
+  <path d="M300 1168 H763.9 Q766.9 1168 766.9 1171 V1181 Q766.9 1184 763.9 1184 H300 Z" fill="#8F7BFF"/>
+  <text x="774.9" y="1181" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.61×</text>
+  <path d="M300 1187 H819.0 Q822.0 1187 822.0 1190 V1200 Q822.0 1203 819.0 1203 H300 Z" fill="#3CC9B4"/>
+  <text x="830.0" y="1200" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start" stroke="#1c1c1e" stroke-width="4" stroke-linejoin="round" paint-order="stroke">1.80×</text>
+  <rect x="40" y="1272" width="12" height="12" rx="3" fill="#8F7BFF"/>
+  <text x="60" y="1282" font-size="13" font-weight="400" fill="#f5f5f7" text-anchor="start">against HarfBuzz 15.1.0’s C++, .NET 10 with the JIT</text>
+  <rect x="430" y="1272" width="12" height="12" rx="3" fill="#3CC9B4"/>
+  <text x="450" y="1282" font-size="13" font-weight="400" fill="#f5f5f7" text-anchor="start">against the HarfBuzzSharp 14.4.0 package, NativeAOT</text>
+</svg>

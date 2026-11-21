@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <!-- HarfBuzz 15.1.0 as an oracle: library selection, C API externs and the oracle.cc shims (append-only). -->
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <IsPackable>false</IsPackable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="OracleLibrary.fs" />
+        <Compile Include="Native.fs" />
+        <Compile Include="Shims.fs" />
+        <Compile Include="NativeText.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="HarfBuzzSharp" />
+        <PackageReference Include="HarfBuzzSharp.NativeAssets.macOS" />
+        <PackageReference Include="HarfBuzzSharp.NativeAssets.Linux" />
+        <PackageReference Include="HarfBuzzSharp.NativeAssets.Win32" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../src/Farfbuzz/Farfbuzz.fsproj" />
+        <ProjectReference Include="../Farfbuzz.Harness/Farfbuzz.Harness.fsproj" />
+    </ItemGroup>
+</Project>

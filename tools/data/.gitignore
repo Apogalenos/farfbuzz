@@ -1,0 +1,5 @@
+*
+!.gitignore
+!manifest.tsv
+!vendored/
+!vendored/**

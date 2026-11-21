@@ -1,0 +1,229 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <IsTrimmable>true</IsTrimmable>
+        <IsAotCompatible>true</IsAotCompatible>
+        <Optimize>true</Optimize>
+        <OtherFlags>$(OtherFlags) --reflectionfree</OtherFlags>
+        <PackageId>Farfbuzz</PackageId>
+        <Description>A fully managed F# reimplementation of the HarfBuzz text shaper.</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageIcon>farfbuzz-128.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageTags>harfbuzz;text-shaping;opentype;aat;fonts;typography;unicode;dotnet;csharp;fsharp;managed;avalonia;skiasharp;nativeaot;webassembly;wasm</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Functional.fs" />
+        <Compile Include="Glyph.fs" />
+        <Compile Include="BufferTypes.fs" />
+        <Compile Include="Digest.fs" />
+        <Compile Include="RunPass.fs" />
+        <Compile Include="SegmentTypes.fs" />
+        <Compile Include="Sealed.fs" />
+        <Compile Include="Tag.fs" />
+        <Compile Include="Errors.fs" />
+        <Compile Include="Number.fs" />
+        <Compile Include="Syntax.fs" />
+        <Compile Include="Feature.fs" />
+        <Compile Include="Variation.fs" />
+        <Compile Include="Serialize.fs" />
+        <Compile Include="Binary.fs" />
+        <Compile Include="Sanitize.fs" />
+        <Compile Include="OpenType/OpenFile.fs" />
+        <Compile Include="OpenType/Head.fs" />
+        <Compile Include="OpenType/Maxp.fs" />
+        <Compile Include="Generated/PostMacRomanNames.fs" />
+        <Compile Include="Generated/CffStandardStrings.fs" />
+        <Compile Include="Generated/CffPredefined.fs" />
+        <Compile Include="Generated/CmapMacRoman.fs" />
+        <Compile Include="Generated/ArabicPua.fs" />
+        <Compile Include="Generated/Scripts.fs" />
+        <Compile Include="Generated/UcdTables.fs" />
+        <Compile Include="Generated/EmojiTables.fs" />
+        <Compile Include="Generated/OtTagTable.fs" />
+        <Compile Include="RagelMachine.fs" />
+        <Compile Include="Generated/IndicMachine.fs" />
+        <Compile Include="Generated/KhmerMachine.fs" />
+        <Compile Include="Generated/MyanmarMachine.fs" />
+        <Compile Include="Generated/UseMachine.fs" />
+        <Compile Include="Ragel.fs" />
+        <Compile Include="Generated/IndicTable.fs" />
+        <Compile Include="Generated/UseTable.fs" />
+        <Compile Include="Generated/ArabicTable.fs" />
+        <Compile Include="Generated/ArabicJoiningList.fs" />
+        <Compile Include="Generated/ArabicWin1256.fs" />
+        <Compile Include="Generated/VowelConstraints.fs" />
+        <Compile Include="Generated/AatFeatureMappings.fs" />
+        <Compile Include="Common.fs" />
+        <Compile Include="OtTag.fs" />
+        <Compile Include="Unicode.fs" />
+        <Compile Include="UnicodeProps.fs" />
+        <Compile Include="Utf.fs" />
+        <Compile Include="GlyphRun.fs" />
+        <Compile Include="OpenType/CmapSubtable.fs" />
+        <Compile Include="Face.fs" />
+        <Compile Include="OpenType/Hhea.fs" />
+        <Compile Include="OpenType/Os2.fs" />
+        <Compile Include="OpenType/Hmtx.fs" />
+        <Compile Include="OpenType/Cmap.fs" />
+        <Compile Include="OpenType/Post.fs" />
+        <Compile Include="OpenType/CffIndex.fs" />
+        <Compile Include="OpenType/CffDict.fs" />
+        <Compile Include="OpenType/Cff1.fs" />
+        <Compile Include="OpenType/CffCharString.fs" />
+        <Compile Include="OpenType/Vorg.fs" />
+        <Compile Include="OpenType/GlyfHeader.fs" />
+        <Compile Include="OpenType/Sbix.fs" />
+        <Compile Include="OpenType/Cbdt.fs" />
+        <Compile Include="Var/Fixed.fs" />
+        <Compile Include="Glyph/Cff1Extents.fs" />
+        <Compile Include="Var/Fvar.fs" />
+        <Compile Include="Var/Coords.fs" />
+        <Compile Include="Var/DeltaSetIndexMap.fs" />
+        <Compile Include="Var/ItemVariationStore.fs" />
+        <Compile Include="OpenType/Colr.fs" />
+        <Compile Include="OpenType/Cpal.fs" />
+        <Compile Include="Glyph/PaintGeometry.fs" />
+        <Compile Include="OpenType/Cff2.fs" />
+        <Compile Include="Glyph/Cff2Extents.fs" />
+        <Compile Include="Var/Avar.fs" />
+        <Compile Include="Var/NormalizeCoords.fs" />
+        <Compile Include="Aat/AatLookup.fs" />
+        <Compile Include="OpenType/Layout/Coverage.fs" />
+        <Compile Include="OpenType/Layout/ClassDef.fs" />
+        <Compile Include="OpenType/Layout/ContextRules.fs" />
+        <Compile Include="OpenType/Layout/LayoutAccel.fs" />
+        <Compile Include="OpenType/Layout/LayoutTable.fs" />
+        <Compile Include="OpenType/Layout/GsubTables.fs" />
+        <Compile Include="OpenType/Layout/ChainSets.fs" />
+        <Compile Include="OpenType/Layout/DeviceTable.fs" />
+        <Compile Include="OpenType/Layout/GposTables.fs" />
+        <Compile Include="OpenType/Layout/Gdef.fs" />
+        <Compile Include="Aat/StateTable.fs" />
+        <Compile Include="Aat/DenseMachine.fs" />
+        <Compile Include="Aat/PairIndex.fs" />
+        <Compile Include="OpenType/Feat.fs" />
+        <Compile Include="OpenType/Ltag.fs" />
+        <Compile Include="OpenType/Morx.fs" />
+        <Compile Include="OpenType/Trak.fs" />
+        <Compile Include="OpenType/Stat.fs" />
+        <Compile Include="OpenType/Kerx.fs" />
+        <Compile Include="OpenType/Ankr.fs" />
+        <Compile Include="OpenType/Layout/KernTable.fs" />
+        <Compile Include="Var/Hvar.fs" />
+        <Compile Include="Var/Mvar.fs" />
+        <Compile Include="Var/FontVariations.fs" />
+        <Compile Include="Glyph/GlyphPoints.fs" />
+        <Compile Include="Var/TupleVariation.fs" />
+        <Compile Include="Var/Gvar.fs" />
+        <Compile Include="Glyph/GlyphOutline.fs" />
+        <Compile Include="Var/Conditions.fs" />
+        <Compile Include="Var/FeatureVariations.fs" />
+        <Compile Include="Layout/GposPairs.fs" />
+        <Compile Include="Layout/GposMarks.fs" />
+        <Compile Include="Layout/LookupGlyphs.fs" />
+        <Compile Include="OtFace.fs" />
+        <Compile Include="Font.fs" />
+        <Compile Include="Var/VariationDevice.fs" />
+        <Compile Include="Aat/AatApply.fs" />
+        <Compile Include="Aat/AatMap.fs" />
+        <Compile Include="Aat/Driver.fs" />
+        <Compile Include="Aat/AatKernel.fs" />
+        <Compile Include="OpenType/Layout/Device.fs" />
+        <Compile Include="Shape/ShapeTypes.fs" />
+        <Compile Include="Aat/MorxNoncontextual.fs" />
+        <Compile Include="Aat/MorxRearrangement.fs" />
+        <Compile Include="Aat/MorxContextual.fs" />
+        <Compile Include="Aat/MorxContextualDirect.fs" />
+        <Compile Include="Aat/MorxLigature.fs" />
+        <Compile Include="Aat/MorxLigatureDirect.fs" />
+        <Compile Include="Aat/MorxInsertion.fs" />
+        <Compile Include="Aat/MorxApply.fs" />
+        <Compile Include="Layout/LayoutApi.fs" />
+        <Compile Include="Layout/MapBuilder.fs" />
+        <Compile Include="Layout/Matching.fs" />
+        <Compile Include="Layout/ContextApply.fs" />
+        <Compile Include="Layout/GsubApply.fs" />
+        <Compile Include="Layout/GposLookups.fs" />
+        <Compile Include="Layout/GposAttach.fs" />
+        <Compile Include="Layout/Engine.fs" />
+        <Compile Include="Layout/GposApply.fs" />
+        <Compile Include="Aat/KerxStateMachines.fs" />
+        <Compile Include="Layout/Kern.fs" />
+        <Compile Include="Aat/KerxPairs.fs" />
+        <Compile Include="Shape/Categorize.fs" />
+        <Compile Include="Shapers/SyllableEdit.fs" />
+        <Compile Include="Shapers/Hebrew.fs" />
+        <Compile Include="Shapers/Thai.fs" />
+        <Compile Include="Shapers/Hangul.fs" />
+        <Compile Include="Shapers/Khmer.fs" />
+        <Compile Include="Shapers/Myanmar.fs" />
+        <Compile Include="Shapers/Arabic.fs" />
+        <Compile Include="Shapers/ArabicFallback.fs" />
+        <Compile Include="Shapers/VowelConstraints.fs" />
+        <Compile Include="Shapers/Indic.fs" />
+        <Compile Include="Shapers/IndicInitial.fs" />
+        <Compile Include="Shapers/IndicFinal.fs" />
+        <Compile Include="Shapers/IndicInitialOwned.fs" />
+        <Compile Include="Shapers/IndicFinalOwned.fs" />
+        <Compile Include="Shapers/Use.fs" />
+        <Compile Include="Shapers/ShaperHooks.fs" />
+        <Compile Include="Glyph/DrawExtents.fs" />
+        <Compile Include="Glyph/PaintExtents.fs" />
+        <Compile Include="Glyph/Extents.fs" />
+        <Compile Include="Glyph/Origins.fs" />
+        <Compile Include="Glyph/FontFuncsOf.fs" />
+        <Compile Include="Layout/FallbackMark.fs" />
+        <Compile Include="Metrics.fs" />
+        <Compile Include="Aat/AatLayout.fs" />
+        <Compile Include="Shape/OtLayout.fs" />
+        <Compile Include="Shape/OtPlan.fs" />
+        <Compile Include="Shape/OtProps.fs" />
+        <Compile Include="Shape/Normalize.fs" />
+        <Compile Include="Shape/OtSubstitute.fs" />
+        <Compile Include="Shape/OtPosition.fs" />
+        <Compile Include="Shape/OtShaper.fs" />
+        <Compile Include="Shape/FallbackShaper.fs" />
+        <Compile Include="Shape/SimpleRun.fs" />
+        <Compile Include="Shape/SyllableReuse.fs" />
+        <Compile Include="Shape/GeneralLine.fs" />
+        <Compile Include="Shape/Execute.fs" />
+        <Compile Include="Shape/Verify.fs" />
+        <Compile Include="Shape/ShapePlan.fs" />
+        <Compile Include="Shape/Shape.fs" />
+        <Compile Include="Shape/LineShape.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="ILLink.Substitutions.xml" LogicalName="ILLink.Substitutions.xml" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="../../assets/farfbuzz-128.png" Pack="true" PackagePath="/" Visible="false" />
+        <None Include="../../README.md" Pack="true" PackagePath="/" Visible="false" />
+        <None Include="../../NOTICE" Pack="true" PackagePath="/" Visible="false" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="Farfbuzz.Tests" />
+        <InternalsVisibleTo Include="Farfbuzz.Diff" />
+        <InternalsVisibleTo Include="Farfbuzz.Bench" />
+    </ItemGroup>
+
+    <!-- The public API is the list of docs/api.md: everything else is internal, and the projects below see it. Farfbuzz.PublicApi is not among them, and never will be. -->
+    <ItemGroup>
+        <InternalsVisibleTo Include="Farfbuzz.HarfBuzzSharp.Bridge" />
+        <InternalsVisibleTo Include="Farfbuzz.Harness" />
+        <InternalsVisibleTo Include="Farfbuzz.Oracle" />
+        <InternalsVisibleTo Include="Farfbuzz.Bench.Runner" />
+        <InternalsVisibleTo Include="Farfbuzz.Bench.Wasm" />
+        <InternalsVisibleTo Include="Farfbuzz.Smoke" />
+        <InternalsVisibleTo Include="Farfbuzz.Facade.Probe" />
+        <InternalsVisibleTo Include="Farfbuzz.HarfBuzzSharp.Tests" />
+        <InternalsVisibleTo Include="Farfbuzz.HarfBuzzSharp.Equivalence" />
+        <InternalsVisibleTo Include="Farfbuzz.Avalonia" />
+        <InternalsVisibleTo Include="Farfbuzz.Gen" />
+        <InternalsVisibleTo Include="HarfBuzzSharp" Key="002400000480000094000000060200000024000052534131000400000100010079159977d2d03a8e6bea7a2e74e8d1afcc93e8851974952bb480a12c9134474d04062447c37e0e68c080536fcf3c3fbe2ff9c979ce998475e506e8ce82dd5b0f350dc10e93bf2eeecf874b24770c5081dbea7447fddafa277b22de47d6ffea449674a4f9fccf84d15069089380284dbdd35f46cdff12a1bd78e4ef0065d016df" />
+    </ItemGroup>
+</Project>

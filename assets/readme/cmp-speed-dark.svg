@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 992" width="880" height="992" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif">
+<title id="t">Time to shape each text once</title>
+<desc id="d">Roboto, Greek polytonic: Farfbuzz 705.66 µs, HarfBuzz 15.1.0 1.41 ms, Farfbuzz time divided by HarfBuzz time 0.50, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 0.45; Roboto, Mongolian Cyrillic: Farfbuzz 558.06 µs, HarfBuzz 15.1.0 1.01 ms, Farfbuzz time divided by HarfBuzz time 0.55, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 0.46; Roboto, Russian: Farfbuzz 601.64 µs, HarfBuzz 15.1.0 1.08 ms, Farfbuzz time divided by HarfBuzz time 0.56, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 0.49; Roboto, Greek: Farfbuzz 673.31 µs, HarfBuzz 15.1.0 1.17 ms, Farfbuzz time divided by HarfBuzz time 0.57, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 0.52; Roboto, English words: Farfbuzz 10.94 ms, HarfBuzz 15.1.0 17.23 ms, Farfbuzz time divided by HarfBuzz time 0.64, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 0.40; Roboto, Polish: Farfbuzz 530.87 µs, HarfBuzz 15.1.0 807.47 µs, Farfbuzz time divided by HarfBuzz time 0.66, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 0.27; Roboto, Norwegian: Farfbuzz 621.93 µs, HarfBuzz 15.1.0 877.17 µs, Farfbuzz time divided by HarfBuzz time 0.71, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 0.29; Roboto, English prose: Farfbuzz 5.34 ms, HarfBuzz 15.1.0 7.24 ms, Farfbuzz time divided by HarfBuzz time 0.74, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 0.33; Roboto, Hungarian: Farfbuzz 735.28 µs, HarfBuzz 15.1.0 977.63 µs, Farfbuzz time divided by HarfBuzz time 0.75, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 0.29; Source Serif variable: Farfbuzz 75.59 ms, HarfBuzz 15.1.0 99.76 ms, Farfbuzz time divided by HarfBuzz time 0.76, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 0.72; Noto Sans SC, Chinese: Farfbuzz 182.40 µs, HarfBuzz 15.1.0 212.27 µs, Farfbuzz time divided by HarfBuzz time 0.86, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 1.08; Marck Script, Russian cursive: Farfbuzz 570.12 µs, HarfBuzz 15.1.0 594.84 µs, Farfbuzz time divided by HarfBuzz time 0.96, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 0.84; Noto Sans Georgian: Farfbuzz 973.68 µs, HarfBuzz 15.1.0 1.01 ms, Farfbuzz time divided by HarfBuzz time 0.96, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 0.74; Noto Sans KR, Korean: Farfbuzz 772.31 µs, HarfBuzz 15.1.0 770.64 µs, Farfbuzz time divided by HarfBuzz time 1.00, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 1.19; Noto Sans JP, Japanese: Farfbuzz 372.41 µs, HarfBuzz 15.1.0 358.22 µs, Farfbuzz time divided by HarfBuzz time 1.04, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 1.12; Gulzar, Persian prose: Farfbuzz 1.35 s, HarfBuzz 15.1.0 1.16 s, Farfbuzz time divided by HarfBuzz time 1.17, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 0.40; Amiri, Persian prose: Farfbuzz 68.20 ms, HarfBuzz 15.1.0 57.17 ms, Farfbuzz time divided by HarfBuzz time 1.19, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 1.01; Noto Sans Thai: Farfbuzz 1.87 ms, HarfBuzz 15.1.0 1.50 ms, Farfbuzz time divided by HarfBuzz time 1.25, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 1.35; Noto Sans Armenian: Farfbuzz 1.22 ms, HarfBuzz 15.1.0 965.47 µs, Farfbuzz time divided by HarfBuzz time 1.26, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 1.35; Nastaliq, Persian prose: Farfbuzz 115.78 ms, HarfBuzz 15.1.0 90.97 ms, Farfbuzz time divided by HarfBuzz time 1.27, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 0.67; Gulzar, Persian words: Farfbuzz 1.15 s, HarfBuzz 15.1.0 893.51 ms, Farfbuzz time divided by HarfBuzz time 1.29, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 0.43; Noto Sans Duployan: Farfbuzz 3.37 s, HarfBuzz 15.1.0 2.40 s, Farfbuzz time divided by HarfBuzz time 1.41, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 0.69; Noto Sans Devanagari: Farfbuzz 50.19 ms, HarfBuzz 15.1.0 35.24 ms, Farfbuzz time divided by HarfBuzz time 1.42, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 1.28; Nastaliq, Persian words: Farfbuzz 164.86 ms, HarfBuzz 15.1.0 112.17 ms, Farfbuzz time divided by HarfBuzz time 1.47, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 0.76; Noto Naskh Arabic: Farfbuzz 2.78 ms, HarfBuzz 15.1.0 1.73 ms, Farfbuzz time divided by HarfBuzz time 1.61, on NativeAOT Farfbuzz time divided by HarfBuzzSharp 14.4.0 time 1.80. Lower is better; the faster result of each comparison is highlighted.</desc>
+<clipPath id="c"><rect width="880" height="992" rx="18"/></clipPath>
+<g clip-path="url(#c)"><rect width="880" height="992" fill="#1c1c1e"/>
+<rect width="880" height="58" fill="#2c2c2e"/>
+<text x="18" y="33.5" font-size="13" font-weight="700" fill="#a1a1a6" text-anchor="start" letter-spacing="0.2">Text and font</text>
+<text x="354" y="24.5" font-size="13" font-weight="700" fill="#a1a1a6" text-anchor="end" letter-spacing="0.2">Farfbuzz</text>
+<text x="354" y="42.5" font-size="13" font-weight="700" fill="#a1a1a6" text-anchor="end" letter-spacing="0.2">per pass</text>
+<text x="494" y="24.5" font-size="13" font-weight="700" fill="#a1a1a6" text-anchor="end" letter-spacing="0.2">HarfBuzz 15.1.0</text>
+<text x="494" y="42.5" font-size="13" font-weight="700" fill="#a1a1a6" text-anchor="end" letter-spacing="0.2">per pass</text>
+<text x="664" y="24.5" font-size="13" font-weight="700" fill="#a1a1a6" text-anchor="end" letter-spacing="0.2">Farfbuzz time ÷</text>
+<text x="664" y="42.5" font-size="13" font-weight="700" fill="#a1a1a6" text-anchor="end" letter-spacing="0.2">HarfBuzz time</text>
+<text x="862" y="24.5" font-size="13" font-weight="700" fill="#a1a1a6" text-anchor="end" letter-spacing="0.2">NativeAOT: Farfbuzz ÷</text>
+<text x="862" y="42.5" font-size="13" font-weight="700" fill="#a1a1a6" text-anchor="end" letter-spacing="0.2">HarfBuzzSharp 14.4.0</text>
+<text x="18" y="80.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, Greek polytonic</text>
+<rect x="277.9" y="63.5" width="86.1" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="354" y="80.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">705.66 µs</text>
+<text x="494" y="80.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.41 ms</text>
+<rect x="619.5" y="63.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="664" y="80.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.50×</text>
+<rect x="817.5" y="63.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="862" y="80.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.45×</text>
+<rect x="0" y="94" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="116.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, Mongolian Cyrillic</text>
+<rect x="277.9" y="99.5" width="86.1" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="354" y="116.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">558.06 µs</text>
+<text x="494" y="116.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.01 ms</text>
+<rect x="619.5" y="99.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="664" y="116.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.55×</text>
+<rect x="817.5" y="99.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="862" y="116.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.46×</text>
+<rect x="0" y="130" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="152.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, Russian</text>
+<rect x="277.9" y="135.5" width="86.1" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="354" y="152.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">601.64 µs</text>
+<text x="494" y="152.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.08 ms</text>
+<rect x="619.5" y="135.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="664" y="152.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.56×</text>
+<rect x="817.5" y="135.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="862" y="152.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.49×</text>
+<rect x="0" y="166" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="188.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, Greek</text>
+<rect x="277.9" y="171.5" width="86.1" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="354" y="188.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">673.31 µs</text>
+<text x="494" y="188.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.17 ms</text>
+<rect x="619.5" y="171.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="664" y="188.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.57×</text>
+<rect x="817.5" y="171.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="862" y="188.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.52×</text>
+<rect x="0" y="202" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="224.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, English words</text>
+<rect x="285.8" y="207.5" width="78.2" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="354" y="224.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">10.94 ms</text>
+<text x="494" y="224.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">17.23 ms</text>
+<rect x="619.5" y="207.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="664" y="224.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.64×</text>
+<rect x="817.5" y="207.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="862" y="224.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.40×</text>
+<rect x="0" y="238" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="260.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, Polish</text>
+<rect x="277.9" y="243.5" width="86.1" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="354" y="260.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">530.87 µs</text>
+<text x="494" y="260.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">807.47 µs</text>
+<rect x="619.5" y="243.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="664" y="260.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.66×</text>
+<rect x="817.5" y="243.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="862" y="260.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.27×</text>
+<rect x="0" y="274" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="296.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, Norwegian</text>
+<rect x="277.9" y="279.5" width="86.1" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="354" y="296.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">621.93 µs</text>
+<text x="494" y="296.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">877.17 µs</text>
+<rect x="619.5" y="279.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="664" y="296.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.71×</text>
+<rect x="817.5" y="279.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="862" y="296.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.29×</text>
+<rect x="0" y="310" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="332.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, English prose</text>
+<rect x="293.7" y="315.5" width="70.3" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="354" y="332.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">5.34 ms</text>
+<text x="494" y="332.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">7.24 ms</text>
+<rect x="619.5" y="315.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="664" y="332.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.74×</text>
+<rect x="817.5" y="315.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="862" y="332.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.33×</text>
+<rect x="0" y="346" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="368.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, Hungarian</text>
+<rect x="277.9" y="351.5" width="86.1" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="354" y="368.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">735.28 µs</text>
+<text x="494" y="368.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">977.63 µs</text>
+<rect x="619.5" y="351.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="664" y="368.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.75×</text>
+<rect x="817.5" y="351.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="862" y="368.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.29×</text>
+<rect x="0" y="382" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="404.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Source Serif variable</text>
+<rect x="285.8" y="387.5" width="78.2" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="354" y="404.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">75.59 ms</text>
+<text x="494" y="404.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">99.76 ms</text>
+<rect x="619.5" y="387.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="664" y="404.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.76×</text>
+<rect x="817.5" y="387.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="862" y="404.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.72×</text>
+<rect x="0" y="418" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="440.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans SC, Chinese</text>
+<rect x="277.9" y="423.5" width="86.1" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="354" y="440.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">182.40 µs</text>
+<text x="494" y="440.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">212.27 µs</text>
+<rect x="619.5" y="423.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="664" y="440.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.86×</text>
+<text x="862" y="440.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.08×</text>
+<rect x="0" y="454" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="476.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Marck Script, Russian cursive</text>
+<rect x="277.9" y="459.5" width="86.1" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="354" y="476.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">570.12 µs</text>
+<text x="494" y="476.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">594.84 µs</text>
+<rect x="619.5" y="459.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="664" y="476.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.96×</text>
+<rect x="817.5" y="459.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="862" y="476.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.84×</text>
+<rect x="0" y="490" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="512.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans Georgian</text>
+<rect x="277.9" y="495.5" width="86.1" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="354" y="512.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">973.68 µs</text>
+<text x="494" y="512.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.01 ms</text>
+<rect x="619.5" y="495.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="664" y="512.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.96×</text>
+<rect x="817.5" y="495.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="862" y="512.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.74×</text>
+<rect x="0" y="526" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="548.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans KR, Korean</text>
+<text x="354" y="548.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">772.31 µs</text>
+<rect x="417.9" y="531.5" width="86.1" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="494" y="548.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">770.64 µs</text>
+<text x="664" y="548.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.00×</text>
+<text x="862" y="548.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.19×</text>
+<rect x="0" y="562" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="584.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans JP, Japanese</text>
+<text x="354" y="584.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">372.41 µs</text>
+<rect x="417.9" y="567.5" width="86.1" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="494" y="584.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">358.22 µs</text>
+<text x="664" y="584.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.04×</text>
+<text x="862" y="584.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.12×</text>
+<rect x="0" y="598" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="620.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Gulzar, Persian prose</text>
+<text x="354" y="620.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.35 s</text>
+<rect x="441.6" y="603.5" width="62.4" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="494" y="620.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">1.16 s</text>
+<text x="664" y="620.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.17×</text>
+<rect x="817.5" y="603.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="862" y="620.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.40×</text>
+<rect x="0" y="634" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="656.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Amiri, Persian prose</text>
+<text x="354" y="656.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">68.20 ms</text>
+<rect x="425.8" y="639.5" width="78.2" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="494" y="656.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">57.17 ms</text>
+<text x="664" y="656.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.19×</text>
+<text x="862" y="656.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.01×</text>
+<rect x="0" y="670" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="692.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans Thai</text>
+<text x="354" y="692.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.87 ms</text>
+<rect x="433.7" y="675.5" width="70.3" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="494" y="692.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">1.50 ms</text>
+<text x="664" y="692.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.25×</text>
+<text x="862" y="692.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.35×</text>
+<rect x="0" y="706" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="728.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans Armenian</text>
+<text x="354" y="728.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.22 ms</text>
+<rect x="417.9" y="711.5" width="86.1" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="494" y="728.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">965.47 µs</text>
+<text x="664" y="728.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.26×</text>
+<text x="862" y="728.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.35×</text>
+<rect x="0" y="742" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="764.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Nastaliq, Persian prose</text>
+<text x="354" y="764.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">115.78 ms</text>
+<rect x="425.8" y="747.5" width="78.2" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="494" y="764.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">90.97 ms</text>
+<text x="664" y="764.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.27×</text>
+<rect x="817.5" y="747.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="862" y="764.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.67×</text>
+<rect x="0" y="778" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="800.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Gulzar, Persian words</text>
+<text x="354" y="800.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.15 s</text>
+<rect x="417.9" y="783.5" width="86.1" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="494" y="800.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">893.51 ms</text>
+<text x="664" y="800.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.29×</text>
+<rect x="817.5" y="783.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="862" y="800.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.43×</text>
+<rect x="0" y="814" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="836.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans Duployan</text>
+<text x="354" y="836.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">3.37 s</text>
+<rect x="441.6" y="819.5" width="62.4" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="494" y="836.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">2.40 s</text>
+<text x="664" y="836.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.41×</text>
+<rect x="817.5" y="819.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="862" y="836.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.69×</text>
+<rect x="0" y="850" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="872.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans Devanagari</text>
+<text x="354" y="872.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">50.19 ms</text>
+<rect x="425.8" y="855.5" width="78.2" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="494" y="872.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">35.24 ms</text>
+<text x="664" y="872.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.42×</text>
+<text x="862" y="872.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.28×</text>
+<rect x="0" y="886" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="908.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Nastaliq, Persian words</text>
+<text x="354" y="908.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">164.86 ms</text>
+<rect x="417.9" y="891.5" width="86.1" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="494" y="908.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">112.17 ms</text>
+<text x="664" y="908.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.47×</text>
+<rect x="817.5" y="891.5" width="54.5" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="862" y="908.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">0.76×</text>
+<rect x="0" y="922" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="944.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Naskh Arabic</text>
+<text x="354" y="944.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">2.78 ms</text>
+<rect x="433.7" y="927.5" width="70.3" height="24" rx="12" fill="#8F7BFF" fill-opacity="0.18"/><text x="494" y="944.5" font-size="14" font-weight="700" fill="#8F7BFF" text-anchor="end">1.73 ms</text>
+<text x="664" y="944.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.61×</text>
+<text x="862" y="944.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">1.80×</text>
+<rect x="0" y="958" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="979" font-size="12" font-weight="400" fill="#a1a1a6" text-anchor="start">Lower is better. Highlighted: the faster time of each row, and every ratio below 1× (Farfbuzz takes less time).</text>
+</g>
+</svg>

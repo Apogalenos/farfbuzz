@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <!--
+        Stands in for a binary HarfBuzzSharp consumer such as Avalonia.Skia: compiled against the real
+        HarfBuzzSharp 8.3.1.3 (what Avalonia 11 and 12 ship against), which does not flow to referencing
+        projects. At run time those projects supply the Farfbuzz facade under the same assembly identity.
+    -->
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <Nullable>enable</Nullable>
+        <IsPackable>false</IsPackable>
+        <IsTrimmable>true</IsTrimmable>
+        <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="HarfBuzzSharp" VersionOverride="8.3.1.3" PrivateAssets="all" ExcludeAssets="runtime;native" />
+    </ItemGroup>
+</Project>

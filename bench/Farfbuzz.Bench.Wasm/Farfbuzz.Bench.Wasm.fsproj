@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net10.0-browser</TargetFramework>
+        <RuntimeIdentifier>browser-wasm</RuntimeIdentifier>
+        <OutputType>Exe</OutputType>
+        <IsPackable>false</IsPackable>
+        <AssemblyName>Farfbuzz.Bench.Runner</AssemblyName>
+        <RootNamespace>Farfbuzz.Bench.Wasm</RootNamespace>
+        <OtherFlags>$(OtherFlags) --reflectionfree</OtherFlags>
+        <WasmMainJSPath>main.mjs</WasmMainJSPath>
+        <WasmEnableThreads>false</WasmEnableThreads>
+        <WasmEmitSymbolMap>false</WasmEmitSymbolMap>
+        <PublishTrimmed>true</PublishTrimmed>
+        <TrimMode>full</TrimMode>
+        <TrimmerSingleWarn>false</TrimmerSingleWarn>
+        <ILLinkTreatWarningsAsErrors>false</ILLinkTreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <Import Project="../Farfbuzz.Bench.Runner/Resources.props" />
+
+    <ItemGroup Condition="'$(BenchImpl)' == 'native'">
+        <PackageReference Include="HarfBuzzSharp.NativeAssets.WebAssembly" />
+    </ItemGroup>
+
+    <PropertyGroup Condition="'$(BenchImpl)' == 'native'">
+        <WasmBuildNative>true</WasmBuildNative>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(BenchImpl)' == 'native'">
+        <NativeFileReference Include="$(HarfBuzzSharpStaticLibraryPath)\3.1.56\st,simd\*.a" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Include="../Farfbuzz.Bench.Runner/Protocol.fs" Link="Protocol.fs" />
+        <Compile Include="../Farfbuzz.Bench.Runner/Impl.fs" Link="Impl.fs" />
+        <Compile Include="../Farfbuzz.Bench.Runner/Program.fs" Link="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <WasmExtraFilesToDeploy Include="main.mjs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../src/Farfbuzz/Farfbuzz.fsproj" />
+    </ItemGroup>
+</Project>
