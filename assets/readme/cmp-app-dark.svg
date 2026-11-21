@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 124" width="880" height="124" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif">
+<title id="t">The whole published app with HarfBuzzSharp and with Farfbuzz</title>
+<desc id="d">macOS x64: With HarfBuzzSharp 43.62 MB, With Farfbuzz 44.55 MB, Difference +0.93 MB; Browser: With HarfBuzzSharp 17.83 MB, With Farfbuzz 20.59 MB, Difference +2.77 MB</desc>
+<clipPath id="c"><rect width="880" height="124" rx="18"/></clipPath>
+<g clip-path="url(#c)"><rect width="880" height="124" fill="#1c1c1e"/>
+<rect width="880" height="40" fill="#2c2c2e"/>
+<rect x="480" y="0" width="200" height="124" fill="#8F7BFF" fill-opacity="0.12"/>
+<text x="18" y="24.5" font-size="13" font-weight="700" fill="#a1a1a6" text-anchor="start" letter-spacing="0.2">The whole published app</text>
+<text x="462" y="24.5" font-size="13" font-weight="700" fill="#a1a1a6" text-anchor="end" letter-spacing="0.2">With HarfBuzzSharp</text>
+<text x="662" y="24.5" font-size="13" font-weight="700" fill="#8F7BFF" text-anchor="end" letter-spacing="0.2">With Farfbuzz</text>
+<text x="862" y="24.5" font-size="13" font-weight="700" fill="#a1a1a6" text-anchor="end" letter-spacing="0.2">Difference</text>
+<text x="18" y="65.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">macOS x64</text>
+<text x="462" y="65.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">43.62 MB</text>
+<text x="662" y="65.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="end">44.55 MB</text>
+<text x="862" y="65.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">+0.93 MB</text>
+<rect x="0" y="82" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="107.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Browser</text>
+<text x="462" y="107.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">17.83 MB</text>
+<text x="662" y="107.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="end">20.59 MB</text>
+<text x="862" y="107.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="end">+2.77 MB</text>
+</g>
+</svg>

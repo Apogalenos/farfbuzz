@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 344" width="880" height="344" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif">
+  <title id="t">What HarfBuzzSharp and Farfbuzz each add to a published Avalonia app</title>
+  <desc id="d">Megabytes added to a published Avalonia 11.3.13 app, measured on 2026-11-21. macOS x64: HarfBuzzSharp 2.96, Farfbuzz 3.89. Browser: HarfBuzzSharp 0.85, Farfbuzz 3.62.</desc>
+  <rect width="880" height="344" rx="22" fill="#f5f5f7"/>
+  <text x="40" y="52" font-size="22" font-weight="600" fill="#1d1d1f" text-anchor="start" letter-spacing="-0.2">What each adds to a published Avalonia app</text>
+  <text x="40" y="76" font-size="14" font-weight="400" fill="#6e6e73" text-anchor="start">Megabytes in the published output, smaller is better</text>
+  <rect x="230.0" y="100" width="1" height="154" fill="#d2d2d7"/>
+  <text x="230.0" y="274" font-size="12" font-weight="400" fill="#6e6e73" text-anchor="middle">0 MB</text>
+  <rect x="350.0" y="100" width="1" height="154" fill="#d2d2d7"/>
+  <text x="350.0" y="274" font-size="12" font-weight="400" fill="#6e6e73" text-anchor="middle">1 MB</text>
+  <rect x="470.0" y="100" width="1" height="154" fill="#d2d2d7"/>
+  <text x="470.0" y="274" font-size="12" font-weight="400" fill="#6e6e73" text-anchor="middle">2 MB</text>
+  <rect x="590.0" y="100" width="1" height="154" fill="#d2d2d7"/>
+  <text x="590.0" y="274" font-size="12" font-weight="400" fill="#6e6e73" text-anchor="middle">3 MB</text>
+  <rect x="710.0" y="100" width="1" height="154" fill="#d2d2d7"/>
+  <text x="710.0" y="274" font-size="12" font-weight="400" fill="#6e6e73" text-anchor="middle">4 MB</text>
+  <text x="40" y="136.0" font-size="16" font-weight="600" fill="#1d1d1f" text-anchor="start">macOS x64</text>
+  <path d="M230 108 H580.9 Q584.9 108 584.9 112 V124 Q584.9 128 580.9 128 H230 Z" fill="#5B3FD4"/>
+  <text x="594.9" y="123" font-size="14.5" font-weight="600" fill="#1d1d1f" text-anchor="start">2.96 MB</text>
+  <text x="662.9" y="123" font-size="13.5" font-weight="400" fill="#6e6e73" text-anchor="start">HarfBuzzSharp</text>
+  <path d="M230 134 H692.5 Q696.5 134 696.5 138 V150 Q696.5 154 692.5 154 H230 Z" fill="#8e8e93"/>
+  <text x="706.5" y="149" font-size="14.5" font-weight="600" fill="#1d1d1f" text-anchor="start">3.89 MB</text>
+  <text x="774.5" y="149" font-size="13.5" font-weight="400" fill="#6e6e73" text-anchor="start">Farfbuzz</text>
+  <text x="40" y="210.0" font-size="16" font-weight="600" fill="#1d1d1f" text-anchor="start">Browser</text>
+  <path d="M230 182 H328.1 Q332.1 182 332.1 186 V198 Q332.1 202 328.1 202 H230 Z" fill="#5B3FD4"/>
+  <text x="342.1" y="197" font-size="14.5" font-weight="600" fill="#1d1d1f" text-anchor="start">0.85 MB</text>
+  <text x="410.1" y="197" font-size="13.5" font-weight="400" fill="#6e6e73" text-anchor="start">HarfBuzzSharp</text>
+  <path d="M230 208 H659.9 Q663.9 208 663.9 212 V224 Q663.9 228 659.9 228 H230 Z" fill="#8e8e93"/>
+  <text x="673.9" y="223" font-size="14.5" font-weight="600" fill="#1d1d1f" text-anchor="start">3.62 MB</text>
+  <text x="741.9" y="223" font-size="13.5" font-weight="400" fill="#6e6e73" text-anchor="start">Farfbuzz</text>
+  <text x="40" y="306" font-size="12" font-weight="400" fill="#6e6e73" text-anchor="start">The repository's Avalonia 11.3.13 sample, published trimmed and self-contained with .NET 10 on 2026-11-21.</text>
+  <text x="40" y="324" font-size="12" font-weight="400" fill="#6e6e73" text-anchor="start">HarfBuzzSharp: C# bindings and compiled C++. Farfbuzz: three assemblies and the runtime code they keep.</text>
+</svg>

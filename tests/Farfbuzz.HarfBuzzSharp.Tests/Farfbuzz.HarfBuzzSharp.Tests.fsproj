@@ -1,0 +1,81 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <!-- Tests of the HarfBuzzSharp facade. The oracle's externs are linked as source because the Oracle project references the real HarfBuzzSharp package, whose assembly has the facade's name. -->
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <IsPackable>false</IsPackable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <ServerGarbageCollection>false</ServerGarbageCollection>
+        <InvariantGlobalization>false</InvariantGlobalization>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="../Farfbuzz.Oracle/OracleLibrary.fs" Link="Oracle/OracleLibrary.fs" />
+        <Compile Include="../Farfbuzz.Oracle/Native.fs" Link="Oracle/Native.fs" />
+        <Compile Include="../Farfbuzz.Oracle/Shims.fs" Link="Oracle/Shims.fs" />
+        <Compile Include="../Farfbuzz.Oracle/NativeText.fs" Link="Oracle/NativeText.fs" />
+        <Compile Include="../Farfbuzz.Diff/Differential.fs" Link="Diff/Differential.fs" />
+        <Compile Include="../Farfbuzz.Diff/TestFonts.fs" Link="Diff/TestFonts.fs" />
+        <Compile Include="../Farfbuzz.Diff/OracleFaces.fs" Link="Diff/OracleFaces.fs" />
+        <Compile Include="../../samples/Farfbuzz.Samples.Skia/Consumers.fs" Link="Skia/Consumers.fs" />
+        <Compile Include="OracleSession.fs" />
+        <Compile Include="Gens.fs" />
+        <Compile Include="SuiteData.fs" />
+        <Compile Include="FacadeFonts.fs" />
+        <Compile Include="ValueTypeTests.fs" />
+        <Compile Include="LanguageTests.fs" />
+        <Compile Include="BlobTests.fs" />
+        <Compile Include="FaceTests.fs" />
+        <Compile Include="BufferAddTests.fs" />
+        <Compile Include="BufferStateTests.fs" />
+        <Compile Include="ShapeTests.fs" />
+        <Compile Include="GlyphQueryTests.fs" />
+        <Compile Include="FontFunctionsTests.fs" />
+        <Compile Include="SerializeTests.fs" />
+        <Compile Include="UnicodeTests.fs" />
+        <Compile Include="VariationTests.fs" />
+        <Compile Include="SkiaConsumersTests.fs" />
+        
+        
+        <Compile Include="Main.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="SkiaSharp.HarfBuzz" />
+        <PackageReference Include="SkiaSharp.NativeAssets.macOS" />
+        <PackageReference Include="SkiaSharp.NativeAssets.Linux" />
+        <PackageReference Include="SkiaSharp.NativeAssets.Win32" />
+        <PackageReference Include="Topten.RichTextKit" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PrunePackageReference Include="HarfBuzzSharp" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.Android" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.iOS" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.Linux" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.MacCatalyst" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.macOS" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.Tizen" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.tvOS" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.WebAssembly" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.Win32" Version="99.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="Baselines/skia-consumers-native.tsv" CopyToOutputDirectory="PreserveNewest" />
+        <None Include="../../samples/Farfbuzz.Samples.Avalonia11/Assets/*.ttf" Link="Assets/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Expecto" />
+        <PackageReference Include="Expecto.FsCheck" />
+        <PackageReference Include="FsCheck" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../src/Farfbuzz/Farfbuzz.fsproj" />
+        <ProjectReference Include="../../src/Farfbuzz.HarfBuzzSharp/Farfbuzz.HarfBuzzSharp.csproj" />
+        <ProjectReference Include="../Farfbuzz.Harness/Farfbuzz.Harness.fsproj" />
+        <ProjectReference Include="../../src/Farfbuzz.HarfBuzzSharp.Bridge/Farfbuzz.HarfBuzzSharp.Bridge.fsproj" />
+    </ItemGroup>
+</Project>

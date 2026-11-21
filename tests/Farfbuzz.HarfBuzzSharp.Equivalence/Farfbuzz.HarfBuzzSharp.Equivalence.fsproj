@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <!-- The whole shape suite through HarfBuzzSharp's public API, once per implementation: -p:HarfBuzzSharpImpl=native (the HarfBuzzSharp 14.4.0
+         package, its native library replaced by the 15.1.0 oracle), facade (the Farfbuzz facade) or core (the Farfbuzz engine through the harness).
+         The three runs cannot share a process: the package and the facade are both the assembly HarfBuzzSharp. -->
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <IsPackable>false</IsPackable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <DefineConstants Condition="'$(HarfBuzzSharpImpl)' == 'native'">$(DefineConstants);NATIVE</DefineConstants>
+        <DefineConstants Condition="'$(HarfBuzzSharpImpl)' == 'facade'">$(DefineConstants);FACADE</DefineConstants>
+        <DefineConstants Condition="'$(HarfBuzzSharpImpl)' == 'core'">$(DefineConstants);CORE</DefineConstants>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="../Farfbuzz.Oracle/OracleLibrary.fs" Link="Oracle/OracleLibrary.fs" Condition="'$(HarfBuzzSharpImpl)' == 'native'" />
+        <Compile Include="Dump.fs" />
+        <Compile Include="PublicApiShaper.fs" Condition="'$(HarfBuzzSharpImpl)' != 'core'" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(HarfBuzzSharpImpl)' == 'native'">
+        <PackageReference Include="HarfBuzzSharp" />
+        <PackageReference Include="HarfBuzzSharp.NativeAssets.macOS" />
+        <PackageReference Include="HarfBuzzSharp.NativeAssets.Linux" />
+        <PackageReference Include="HarfBuzzSharp.NativeAssets.Win32" />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(HarfBuzzSharpImpl)' == 'facade'">
+        <ProjectReference Include="../../src/Farfbuzz.HarfBuzzSharp/Farfbuzz.HarfBuzzSharp.csproj" />
+        <PrunePackageReference Include="HarfBuzzSharp" Version="99.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../src/Farfbuzz/Farfbuzz.fsproj" />
+        <ProjectReference Include="../Farfbuzz.Harness/Farfbuzz.Harness.fsproj" />
+    </ItemGroup>
+</Project>

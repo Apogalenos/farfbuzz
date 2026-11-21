@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Manifest.fs" />
+        <Compile Include="Fetch.fs" />
+        <Compile Include="UpstreamSources.fs" />
+        <Compile Include="Emit.fs" />
+        <Compile Include="Scripts.fs" />
+        <Compile Include="Pack.fs" />
+        <Compile Include="UcdXml.fs" />
+        <Compile Include="UcdGen.fs" />
+        <Compile Include="EmojiGen.fs" />
+        <Compile Include="HtmlRows.fs" />
+        <Compile Include="TagRegistry.fs" />
+        <Compile Include="TagGen.fs" />
+        <Compile Include="RagelFlat.fs" />
+        <Compile Include="IndicTable.fs" />
+        <Compile Include="UseTable.fs" />
+        <Compile Include="ArabicTable.fs" />
+        <Compile Include="ArabicJoiningList.fs" />
+        <Compile Include="ArabicWin1256.fs" />
+        <Compile Include="VowelConstraints.fs" />
+        <Compile Include="AatMappings.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+</Project>

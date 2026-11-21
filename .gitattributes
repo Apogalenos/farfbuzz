@@ -1,0 +1,13 @@
+* text=auto eol=lf
+*.fs text eol=lf
+*.fsx text eol=lf
+*.fsproj text eol=lf
+*.props text eol=lf
+*.md text eol=lf
+*.tests text eol=lf
+*.baseline text eol=lf
+*.png binary
+*.ttf binary
+*.otf binary
+*.ttc binary
+*.dfont binary

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 226" width="880" height="226" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif">
+<title id="t">Threads: HarfBuzzSharp and Farfbuzz</title>
+<desc id="d">A font used by several threads: HarfBuzzSharp a handle whose lifetime the app guards, Farfbuzz an immutable value, shared freely; A buffer: HarfBuzzSharp belongs to one thread at a time, Farfbuzz none: every call returns a new value; Lines of a document shaped in parallel: HarfBuzzSharp one buffer per thread, managed by the app, Farfbuzz one call, LineShape, over every core</desc>
+<clipPath id="c"><rect width="880" height="226" rx="18"/></clipPath>
+<g clip-path="url(#c)"><rect width="880" height="226" fill="#1c1c1e"/>
+<rect width="880" height="40" fill="#2c2c2e"/>
+<rect x="660" y="0" width="220" height="226" fill="#8F7BFF" fill-opacity="0.12"/>
+<text x="18" y="24.5" font-size="13" font-weight="700" fill="#a1a1a6" text-anchor="start" letter-spacing="0.2"></text>
+<text x="348" y="24.5" font-size="13" font-weight="700" fill="#a1a1a6" text-anchor="start" letter-spacing="0.2">HarfBuzzSharp</text>
+<text x="678" y="24.5" font-size="13" font-weight="700" fill="#8F7BFF" text-anchor="start" letter-spacing="0.2">Farfbuzz</text>
+<text x="18" y="75.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">A font used by several threads</text>
+<text x="348" y="65.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="start">a handle whose lifetime the app</text>
+<text x="348" y="85.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="start">guards</text>
+<text x="678" y="65.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">an immutable value,</text>
+<text x="678" y="85.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">shared freely</text>
+<rect x="0" y="102" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="137.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">A buffer</text>
+<text x="348" y="137.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="start">belongs to one thread at a time</text>
+<text x="678" y="127.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">none: every call</text>
+<text x="678" y="147.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">returns a new value</text>
+<rect x="0" y="164" width="880" height="1" fill="#3a3a3c"/>
+<text x="18" y="189.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">Lines of a document shaped in</text>
+<text x="18" y="209.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">parallel</text>
+<text x="348" y="189.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="start">one buffer per thread, managed by the</text>
+<text x="348" y="209.5" font-size="14" font-weight="400" fill="#f5f5f7" text-anchor="start">app</text>
+<text x="678" y="189.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">one call, LineShape,</text>
+<text x="678" y="209.5" font-size="14" font-weight="600" fill="#f5f5f7" text-anchor="start">over every core</text>
+</g>
+</svg>

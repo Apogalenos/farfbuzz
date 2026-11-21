@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <!-- Avalonia 12.1.1 on a Skia platform with no window: the corpus of P10.S10 shaped through Avalonia.HarfBuzz (impl harfbuzz) and through Farfbuzz (impl farfbuzz), one process each. -->
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <LangVersion>latest</LangVersion>
+        <Nullable>disable</Nullable>
+        <IsPackable>false</IsPackable>
+        <GenerateDocumentationFile>false</GenerateDocumentationFile>
+        <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+        <InvariantGlobalization>false</InvariantGlobalization>
+        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+        <NoWarn>$(NoWarn);AVA3001</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" VersionOverride="[12.1.1]" />
+        <PackageReference Include="Avalonia.Skia" VersionOverride="[12.1.1]" />
+        <PackageReference Include="Avalonia.HarfBuzz" VersionOverride="[12.1.1]" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AvaloniaResource Include="../../samples/Farfbuzz.Samples.Avalonia11/Assets/*.ttf" Link="Assets/%(Filename)%(Extension)" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../src/Farfbuzz.Avalonia/Farfbuzz.Avalonia.csproj" />
+    </ItemGroup>
+</Project>

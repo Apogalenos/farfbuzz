@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0-browser</TargetFramework>
+        <RuntimeIdentifier>browser-wasm</RuntimeIdentifier>
+        <WasmMainJSPath>wwwroot/main.js</WasmMainJSPath>
+        <WasmEnableThreads>false</WasmEnableThreads>
+        <GenerateDocumentationFile>false</GenerateDocumentationFile>
+        <IsPackable>false</IsPackable>
+        <PublishTrimmed>false</PublishTrimmed>
+        <NoWarn>$(NoWarn);WASM0001</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="wwwroot/main.js" />
+        <Content Include="wwwroot/index.html" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia.Browser" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../Farfbuzz.Samples.Avalonia11/Farfbuzz.Samples.Avalonia11.fsproj" />
+    </ItemGroup>
+</Project>
