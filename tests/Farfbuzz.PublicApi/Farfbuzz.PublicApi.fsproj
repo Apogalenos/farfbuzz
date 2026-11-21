@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <!-- The public API of Farfbuzz, pinned. This project has no InternalsVisibleTo from the library and never gets one: it compiles only if the public list is enough. -->
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Surface.fs" />
+        <Compile Include="Use.fs" />
+        <Compile Include="Main.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="public-api.baseline" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Expecto" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../src/Farfbuzz/Farfbuzz.fsproj" />
+    </ItemGroup>
+</Project>

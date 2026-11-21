@@ -1,0 +1,4 @@
+[submodule "upstream/harfbuzz"]
+	path = upstream/harfbuzz
+	url = https://github.com/harfbuzz/harfbuzz.git
+	shallow = true

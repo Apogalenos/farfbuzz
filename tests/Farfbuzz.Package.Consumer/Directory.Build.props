@@ -1,0 +1,10 @@
+<Project>
+    <!--
+        Stops the repository's Directory.Build.props from reaching this project, so it builds as an outside consumer would,
+        and keeps its output under artifacts/package.
+    -->
+    <PropertyGroup>
+        <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)../../artifacts/package/obj/</BaseIntermediateOutputPath>
+        <BaseOutputPath>$(MSBuildThisFileDirectory)../../artifacts/package/bin/</BaseOutputPath>
+    </PropertyGroup>
+</Project>

@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <AssemblyName>HarfBuzzSharp</AssemblyName>
+        <RootNamespace>HarfBuzzSharp</RootNamespace>
+        <LangVersion>latest</LangVersion>
+        <Nullable>disable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>15.1.0.0</FileVersion>
+        <InformationalVersion>15.1.0+farfbuzz</InformationalVersion>
+        <SignAssembly>true</SignAssembly>
+        <PublicSign>true</PublicSign>
+        <AssemblyOriginatorKeyFile>mono.snk</AssemblyOriginatorKeyFile>
+        <IsTrimmable>true</IsTrimmable>
+        <IsAotCompatible>true</IsAotCompatible>
+        <DefineConstants>$(DefineConstants);HARFBUZZ</DefineConstants>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <NoWarn>$(NoWarn);CS8002</NoWarn>
+        <Company>Farfbuzz</Company>
+        <Product>Farfbuzz HarfBuzzSharp facade</Product>
+        <Description>A HarfBuzzSharp-compatible assembly implemented on Farfbuzz: the public API of HarfBuzzSharp 14.4.0, no native library.</Description>
+        <PackageId>Farfbuzz.HarfBuzzSharp</PackageId>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageIcon>farfbuzz-128.png</PackageIcon>
+        <PackageTags>harfbuzz;harfbuzzsharp;text-shaping;opentype;fonts;dotnet;csharp;managed;drop-in;avalonia;skiasharp;nativeaot;webassembly;wasm</PackageTags>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(FarfbuzzFacadeUnsigned)' == 'true'">
+        <SignAssembly>false</SignAssembly>
+        <PublicSign>false</PublicSign>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../../assets/farfbuzz-128.png" Pack="true" PackagePath="/" Visible="false" />
+        <None Include="THIRD-PARTY-NOTICES.md" Pack="true" PackagePath="/" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../Farfbuzz/Farfbuzz.fsproj" />
+        <ProjectReference Include="../Farfbuzz.HarfBuzzSharp.Bridge/Farfbuzz.HarfBuzzSharp.Bridge.fsproj" />
+    </ItemGroup>
+</Project>

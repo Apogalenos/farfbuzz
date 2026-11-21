@@ -1,0 +1,9 @@
+<Project>
+    <!-- One output folder per implementation, so that the three builds of the project do not overwrite one another. -->
+    <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+
+    <PropertyGroup>
+        <HarfBuzzSharpImpl Condition="'$(HarfBuzzSharpImpl)' == ''">facade</HarfBuzzSharpImpl>
+        <ArtifactsPivots Condition="'$(ArtifactsPivots)' == ''">release_$(HarfBuzzSharpImpl)</ArtifactsPivots>
+    </PropertyGroup>
+</Project>

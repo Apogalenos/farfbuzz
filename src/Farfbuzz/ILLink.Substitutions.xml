@@ -1,0 +1,12 @@
+<linker>
+    <assembly fullname="Farfbuzz">
+        <resource name="FSharpSignatureData.Farfbuzz" action="remove"></resource>
+        <resource name="FSharpSignatureDataB.Farfbuzz" action="remove"></resource>
+        <resource name="FSharpOptimizationData.Farfbuzz" action="remove"></resource>
+        <resource name="FSharpOptimizationDataB.Farfbuzz" action="remove"></resource>
+        <resource name="FSharpSignatureCompressedData.Farfbuzz" action="remove"></resource>
+        <resource name="FSharpSignatureCompressedDataB.Farfbuzz" action="remove"></resource>
+        <resource name="FSharpOptimizationCompressedData.Farfbuzz" action="remove"></resource>
+        <resource name="FSharpOptimizationCompressedDataB.Farfbuzz" action="remove"></resource>
+    </assembly>
+</linker>

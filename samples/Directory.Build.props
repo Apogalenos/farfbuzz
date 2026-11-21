@@ -1,0 +1,26 @@
+<Project>
+    <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+
+    <PropertyGroup>
+        <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+        <InvariantGlobalization>false</InvariantGlobalization>
+        <NoWarn>$(NoWarn);AVA3001</NoWarn>
+        <FarfbuzzRoot Condition="'$(FarfbuzzRoot)' == ''">$(MSBuildThisFileDirectory)../</FarfbuzzRoot>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(UseFarfbuzz)' == 'true'">
+        <ShouldIncludeNativeHarfBuzzSharp>false</ShouldIncludeNativeHarfBuzzSharp>
+    </PropertyGroup>
+    <ItemGroup Condition="'$(UseFarfbuzz)' == 'true'">
+        <PrunePackageReference Include="HarfBuzzSharp" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.Android" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.iOS" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.Linux" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.MacCatalyst" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.macOS" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.Tizen" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.tvOS" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.WebAssembly" Version="99.0.0" />
+        <PrunePackageReference Include="HarfBuzzSharp.NativeAssets.Win32" Version="99.0.0" />
+    </ItemGroup>
+</Project>

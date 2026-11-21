@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 676" width="880" height="676" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif">
+<title id="t">How Farfbuzz compares with HarfBuzz, HarfRust and HarfBuzzSharp</title>
+<desc id="d">Written in: Farfbuzz F#, HarfBuzz C++, HarfRust Rust, HarfBuzzSharp C# bindings over HarfBuzz's C++; A .NET app ships: Farfbuzz managed assemblies only, HarfBuzz a compiled C++ library per platform, HarfRust a compiled Rust library per platform, HarfBuzzSharp the bindings and a compiled C++ library per platform; HarfBuzz release it follows: Farfbuzz 15.1.0, HarfBuzz the original, HarfRust 15.0.0, HarfBuzzSharp 8.3.1 with Avalonia 11.3 and 12.1; 14.4.0 in its latest release; In a .NET browser app: Farfbuzz managed code, like the rest of the app, HarfBuzz compiled C++ linked into the bundle, HarfRust compiled Rust linked into the bundle, HarfBuzzSharp compiled C++ linked into the bundle; Fonts with a size and scale: Farfbuzz yes, HarfBuzz yes, HarfRust no: results come in font units, HarfBuzzSharp yes; A malformed font: Farfbuzz the same answers as HarfBuzz, HarfBuzz the reference, HarfRust an error, where HarfBuzz carries on, HarfBuzzSharp the same as HarfBuzz; API for .NET: Farfbuzz HarfBuzzSharp's, and an F# API of its own, HarfBuzz through bindings, HarfRust through its C API, HarfBuzzSharp its own; Lines of code, without comments or tests: Farfbuzz 50,028 lines of F#, HarfBuzz 89,732 lines of C++, HarfRust 26,079 lines of Rust, plus the read-fonts library, HarfBuzzSharp bindings over HarfBuzz's C++</desc>
+<clipPath id="c"><rect width="880" height="676" rx="18"/></clipPath>
+<g clip-path="url(#c)"><rect width="880" height="676" fill="#f5f5f7"/>
+<rect width="880" height="40" fill="#e8e8ed"/>
+<rect x="170" y="0" width="178" height="676" fill="#5B3FD4" fill-opacity="0.07"/>
+<text x="18" y="24.5" font-size="13" font-weight="700" fill="#6e6e73" text-anchor="start" letter-spacing="0.2"></text>
+<text x="188" y="24.5" font-size="13" font-weight="700" fill="#5B3FD4" text-anchor="start" letter-spacing="0.2">Farfbuzz</text>
+<text x="366" y="24.5" font-size="13" font-weight="700" fill="#6e6e73" text-anchor="start" letter-spacing="0.2">HarfBuzz</text>
+<text x="526" y="24.5" font-size="13" font-weight="700" fill="#6e6e73" text-anchor="start" letter-spacing="0.2">HarfRust</text>
+<text x="696" y="24.5" font-size="13" font-weight="700" fill="#6e6e73" text-anchor="start" letter-spacing="0.2">HarfBuzzSharp</text>
+<text x="18" y="75.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">Written in</text>
+<text x="188" y="75.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">F#</text>
+<text x="366" y="75.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">C++</text>
+<text x="526" y="75.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">Rust</text>
+<text x="696" y="65.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">C# bindings over</text>
+<text x="696" y="85.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">HarfBuzz's C++</text>
+<rect x="0" y="102" width="880" height="1" fill="#d2d2d7"/>
+<text x="18" y="137.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">A .NET app</text>
+<text x="18" y="157.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">ships</text>
+<text x="188" y="137.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">managed</text>
+<text x="188" y="157.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">assemblies only</text>
+<text x="366" y="127.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">a compiled C++</text>
+<text x="366" y="147.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">library per</text>
+<text x="366" y="167.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">platform</text>
+<text x="526" y="127.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">a compiled Rust</text>
+<text x="526" y="147.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">library per</text>
+<text x="526" y="167.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">platform</text>
+<text x="696" y="127.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">the bindings and a</text>
+<text x="696" y="147.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">compiled C++ library</text>
+<text x="696" y="167.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">per platform</text>
+<rect x="0" y="184" width="880" height="1" fill="#d2d2d7"/>
+<text x="18" y="209.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">HarfBuzz</text>
+<text x="18" y="229.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">release it</text>
+<text x="18" y="249.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">follows</text>
+<text x="188" y="229.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">15.1.0</text>
+<text x="366" y="229.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">the original</text>
+<text x="526" y="229.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">15.0.0</text>
+<text x="696" y="209.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">8.3.1 with Avalonia</text>
+<text x="696" y="229.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">11.3 and 12.1; 14.4.0</text>
+<text x="696" y="249.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">in its latest release</text>
+<rect x="0" y="266" width="880" height="1" fill="#d2d2d7"/>
+<text x="18" y="301.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">In a .NET</text>
+<text x="18" y="321.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">browser app</text>
+<text x="188" y="291.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">managed code, like</text>
+<text x="188" y="311.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">the rest of the</text>
+<text x="188" y="331.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">app</text>
+<text x="366" y="291.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">compiled C++</text>
+<text x="366" y="311.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">linked into the</text>
+<text x="366" y="331.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">bundle</text>
+<text x="526" y="291.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">compiled Rust</text>
+<text x="526" y="311.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">linked into the</text>
+<text x="526" y="331.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">bundle</text>
+<text x="696" y="301.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">compiled C++ linked</text>
+<text x="696" y="321.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">into the bundle</text>
+<rect x="0" y="348" width="880" height="1" fill="#d2d2d7"/>
+<text x="18" y="373.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">Fonts with a</text>
+<text x="18" y="393.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">size and scale</text>
+<text x="188" y="383.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">yes</text>
+<text x="366" y="383.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">yes</text>
+<text x="526" y="373.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">no: results come</text>
+<text x="526" y="393.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">in font units</text>
+<text x="696" y="383.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">yes</text>
+<rect x="0" y="410" width="880" height="1" fill="#d2d2d7"/>
+<text x="18" y="445.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">A malformed</text>
+<text x="18" y="465.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">font</text>
+<text x="188" y="445.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">the same answers</text>
+<text x="188" y="465.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">as HarfBuzz</text>
+<text x="366" y="455.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">the reference</text>
+<text x="526" y="435.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">an error, where</text>
+<text x="526" y="455.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">HarfBuzz carries</text>
+<text x="526" y="475.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">on</text>
+<text x="696" y="455.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">the same as HarfBuzz</text>
+<rect x="0" y="492" width="880" height="1" fill="#d2d2d7"/>
+<text x="18" y="537.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">API for .NET</text>
+<text x="188" y="517.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">HarfBuzzSharp's,</text>
+<text x="188" y="537.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">and an F# API of</text>
+<text x="188" y="557.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">its own</text>
+<text x="366" y="527.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">through</text>
+<text x="366" y="547.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">bindings</text>
+<text x="526" y="537.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">through its C API</text>
+<text x="696" y="537.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">its own</text>
+<rect x="0" y="574" width="880" height="1" fill="#d2d2d7"/>
+<text x="18" y="599.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">Lines of code,</text>
+<text x="18" y="619.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">without</text>
+<text x="18" y="639.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">comments or</text>
+<text x="18" y="659.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">tests</text>
+<text x="188" y="619.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">50,028 lines of</text>
+<text x="188" y="639.5" font-size="14" font-weight="600" fill="#1d1d1f" text-anchor="start">F#</text>
+<text x="366" y="619.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">89,732 lines of</text>
+<text x="366" y="639.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">C++</text>
+<text x="526" y="599.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">26,079 lines of</text>
+<text x="526" y="619.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">Rust, plus the</text>
+<text x="526" y="639.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">read-fonts</text>
+<text x="526" y="659.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">library</text>
+<text x="696" y="619.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">bindings over</text>
+<text x="696" y="639.5" font-size="14" font-weight="400" fill="#1d1d1f" text-anchor="start">HarfBuzz's C++</text>
+</g>
+</svg>

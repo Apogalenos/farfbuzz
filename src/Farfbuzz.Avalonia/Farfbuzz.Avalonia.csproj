@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <!-- Avalonia 12's text shaping subsystem on Farfbuzz, without HarfBuzzSharp. Both Avalonia interfaces it implements are [NotClientImplementable] and AvaloniaLocator is
+         [PrivateApi], so the project compiles against the implementation assembly with the unstable private APIs opened; the Avalonia version is pinned exactly. -->
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>disable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <IsPackable>false</IsPackable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <AvaloniaAccessUnstablePrivateApis>true</AvaloniaAccessUnstablePrivateApis>
+        <Avalonia_I_Want_To_Use_Private_Apis_In_Nuget_Package_And_Promise_To_Pin_The_Exact_Avalonia_Version_In_Package_Dependency>true</Avalonia_I_Want_To_Use_Private_Apis_In_Nuget_Package_And_Promise_To_Pin_The_Exact_Avalonia_Version_In_Package_Dependency>
+        <NoWarn>$(NoWarn);AVA3001</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" VersionOverride="[12.1.1]" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../Farfbuzz/Farfbuzz.fsproj" />
+        <ProjectReference Include="../Farfbuzz.HarfBuzzSharp.Bridge/Farfbuzz.HarfBuzzSharp.Bridge.fsproj" />
+    </ItemGroup>
+</Project>

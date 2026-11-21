@@ -1,0 +1,42 @@
+<Project>
+    <PropertyGroup>
+        <BenchUpstream Condition="'$(BenchUpstream)' == ''">$(UpstreamRoot)</BenchUpstream>
+    </PropertyGroup>
+
+    <ItemGroup Condition="Exists('$(BenchUpstream)perf/fonts')">
+        <EmbeddedResource Include="$(BenchUpstream)perf/fonts/Roboto-Regular.ttf" LogicalName="fonts/%(Filename)%(Extension)" Link="fonts/%(Filename)%(Extension)" />
+        <EmbeddedResource Include="$(BenchUpstream)perf/fonts/Amiri-Regular.ttf" LogicalName="fonts/%(Filename)%(Extension)" Link="fonts/%(Filename)%(Extension)" />
+        <EmbeddedResource Include="$(BenchUpstream)perf/fonts/NotoNastaliqUrdu-Regular.ttf" LogicalName="fonts/%(Filename)%(Extension)" Link="fonts/%(Filename)%(Extension)" />
+        <EmbeddedResource Include="$(BenchUpstream)perf/fonts/Gulzar-Regular.ttf" LogicalName="fonts/%(Filename)%(Extension)" Link="fonts/%(Filename)%(Extension)" />
+        <EmbeddedResource Include="$(BenchUpstream)perf/fonts/NotoSansDuployan-Regular.otf" LogicalName="fonts/%(Filename)%(Extension)" Link="fonts/%(Filename)%(Extension)" />
+        <EmbeddedResource Include="$(BenchUpstream)test/subset/data/fonts/SourceSerifVariable-Roman.ttf" LogicalName="fonts/%(Filename)%(Extension)" Link="fonts/%(Filename)%(Extension)" />
+        <EmbeddedResource Include="$(BenchUpstream)test/subset/data/fonts/NotoSansDevanagari-Regular.ttf" LogicalName="fonts/%(Filename)%(Extension)" Link="fonts/%(Filename)%(Extension)" />
+        <EmbeddedResource Include="$(BenchUpstream)perf/texts/en-thelittleprince.txt" LogicalName="texts/%(Filename)%(Extension)" Link="texts/%(Filename)%(Extension)" />
+        <EmbeddedResource Include="$(BenchUpstream)perf/texts/en-words.txt" LogicalName="texts/%(Filename)%(Extension)" Link="texts/%(Filename)%(Extension)" />
+        <EmbeddedResource Include="$(BenchUpstream)perf/texts/react-dom.txt" LogicalName="texts/%(Filename)%(Extension)" Link="texts/%(Filename)%(Extension)" />
+        <EmbeddedResource Include="$(BenchUpstream)perf/texts/hi-words.txt" LogicalName="texts/%(Filename)%(Extension)" Link="texts/%(Filename)%(Extension)" />
+        <EmbeddedResource Include="$(BenchUpstream)perf/texts/fa-thelittleprince.txt" LogicalName="texts/%(Filename)%(Extension)" Link="texts/%(Filename)%(Extension)" />
+        <EmbeddedResource Include="$(BenchUpstream)perf/texts/fa-words.txt" LogicalName="texts/%(Filename)%(Extension)" Link="texts/%(Filename)%(Extension)" />
+        <EmbeddedResource Include="$(BenchUpstream)perf/texts/duployan.txt" LogicalName="texts/%(Filename)%(Extension)" Link="texts/%(Filename)%(Extension)" />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(BenchImpl)' == 'native'">
+        <PackageReference Include="HarfBuzzSharp" />
+    </ItemGroup>
+
+    <PropertyGroup Condition="'$(BenchImpl)' == 'native'">
+        <DefineConstants>$(DefineConstants);BENCH_NATIVE</DefineConstants>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(BenchImpl)' == 'facade'">
+        <ProjectReference Include="../../src/Farfbuzz.HarfBuzzSharp/Farfbuzz.HarfBuzzSharp.csproj" />
+    </ItemGroup>
+
+    <PropertyGroup Condition="'$(BenchImpl)' == 'facade'">
+        <DefineConstants>$(DefineConstants);BENCH_NATIVE;BENCH_FACADE</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(RunAOTCompilation)' == 'true'">
+        <DefineConstants>$(DefineConstants);WASM_AOT</DefineConstants>
+    </PropertyGroup>
+</Project>

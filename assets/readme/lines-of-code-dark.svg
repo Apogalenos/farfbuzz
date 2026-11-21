@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 364" width="880" height="364" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif">
+  <title id="t">Lines of code in Farfbuzz, HarfRust and HarfBuzz</title>
+  <desc id="d">Library code without comments, blank lines, tests or generated tables: Farfbuzz 50,028 lines of F#, shaping included, HarfRust 26,079 lines of Rust without the read-fonts library, HarfBuzz 89,732 lines of C++ in its core library.</desc>
+  <rect width="880" height="364" rx="22" fill="#1c1c1e"/>
+  <text x="40" y="52" font-size="22" font-weight="600" fill="#f5f5f7" text-anchor="start" letter-spacing="-0.2">Lines of code</text>
+  <text x="40" y="76" font-size="14" font-weight="400" fill="#a1a1a6" text-anchor="start">Library code without comments, blank lines, tests or generated tables</text>
+  <rect x="300.0" y="98" width="1" height="160" fill="#3a3a3c"/>
+  <text x="300.0" y="286" font-size="12" font-weight="400" fill="#a1a1a6" text-anchor="middle">0</text>
+  <rect x="386.0" y="98" width="1" height="160" fill="#3a3a3c"/>
+  <text x="386.0" y="286" font-size="12" font-weight="400" fill="#a1a1a6" text-anchor="middle">20K</text>
+  <rect x="472.0" y="98" width="1" height="160" fill="#3a3a3c"/>
+  <text x="472.0" y="286" font-size="12" font-weight="400" fill="#a1a1a6" text-anchor="middle">40K</text>
+  <rect x="558.0" y="98" width="1" height="160" fill="#3a3a3c"/>
+  <text x="558.0" y="286" font-size="12" font-weight="400" fill="#a1a1a6" text-anchor="middle">60K</text>
+  <rect x="644.0" y="98" width="1" height="160" fill="#3a3a3c"/>
+  <text x="644.0" y="286" font-size="12" font-weight="400" fill="#a1a1a6" text-anchor="middle">80K</text>
+  <rect x="730.0" y="98" width="1" height="160" fill="#3a3a3c"/>
+  <text x="730.0" y="286" font-size="12" font-weight="400" fill="#a1a1a6" text-anchor="middle">100K</text>
+  <text x="40" y="113" font-size="16" font-weight="600" fill="#f5f5f7" text-anchor="start">Farfbuzz</text>
+  <text x="40" y="132" font-size="13" font-weight="400" fill="#a1a1a6" text-anchor="start">F#, the whole library, shaping included</text>
+  <path d="M300 104 H511.1 Q515.1 104 515.1 108 V122 Q515.1 126 511.1 126 H300 Z" fill="#8F7BFF"/>
+  <text x="525.1" y="120" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">50,028 lines</text>
+  <text x="40" y="171" font-size="16" font-weight="600" fill="#f5f5f7" text-anchor="start">HarfRust</text>
+  <text x="40" y="190" font-size="13" font-weight="400" fill="#a1a1a6" text-anchor="start">Rust, without the read-fonts library</text>
+  <path d="M300 162 H408.1 Q412.1 162 412.1 166 V180 Q412.1 184 408.1 184 H300 Z" fill="#8e8e93"/>
+  <text x="422.1" y="178" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">26,079 lines</text>
+  <text x="40" y="229" font-size="16" font-weight="600" fill="#f5f5f7" text-anchor="start">HarfBuzz</text>
+  <text x="40" y="248" font-size="13" font-weight="400" fill="#a1a1a6" text-anchor="start">C++, core library</text>
+  <path d="M300 220 H681.8 Q685.8 220 685.8 224 V238 Q685.8 242 681.8 242 H300 Z" fill="#8e8e93"/>
+  <text x="695.8" y="236" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">89,732 lines</text>
+  <text x="40" y="322" font-size="12" font-weight="400" fill="#a1a1a6" text-anchor="start">Farfbuzz: src/Farfbuzz without src/Farfbuzz/Generated, counted with tokei 14.0.0 on 2026-11-21.</text>
+  <text x="40" y="340" font-size="12" font-weight="400" fill="#a1a1a6" text-anchor="start">HarfRust 0.15.0 and HarfBuzz 15.1.0: counted on 2026-11-10. HarfRust reads font tables through read-fonts, not counted.</text>
+</svg>
