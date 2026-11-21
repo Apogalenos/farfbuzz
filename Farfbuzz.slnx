@@ -1,0 +1,38 @@
+<Solution>
+  <Folder Name="/bench/">
+    <Project Path="bench/Farfbuzz.Bench.Runner/Farfbuzz.Bench.Runner.fsproj" />
+    <Project Path="bench/Farfbuzz.Bench.Wasm/Farfbuzz.Bench.Wasm.fsproj" />
+    <Project Path="bench/Farfbuzz.Bench/Farfbuzz.Bench.fsproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Farfbuzz.Avalonia/Farfbuzz.Avalonia.csproj" />
+    <Project Path="src/Farfbuzz.HarfBuzzSharp.Bridge/Farfbuzz.HarfBuzzSharp.Bridge.fsproj" />
+    <Project Path="src/Farfbuzz.HarfBuzzSharp/Farfbuzz.HarfBuzzSharp.csproj" />
+    <Project Path="src/Farfbuzz/Farfbuzz.fsproj" />
+  </Folder>
+  <Folder Name="/samples/">
+    <Project Path="samples/Farfbuzz.Samples.Avalonia11.Browser/Farfbuzz.Samples.Avalonia11.Browser.fsproj" />
+    <Project Path="samples/Farfbuzz.Samples.Avalonia11/Farfbuzz.Samples.Avalonia11.fsproj" />
+    <Project Path="samples/Farfbuzz.Samples.Skia/Farfbuzz.Samples.Skia.fsproj" />
+    <Project Path="samples/Farfbuzz.Samples.Avalonia11.Headless/Farfbuzz.Samples.Avalonia11.Headless.fsproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/Farfbuzz.Gen/Farfbuzz.Gen.fsproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Farfbuzz.Avalonia.Tests/Farfbuzz.Avalonia.Tests.csproj" />
+    <Project Path="tests/Farfbuzz.Diff/Farfbuzz.Diff.fsproj" />
+    <Project Path="tests/Farfbuzz.Facade.Consumer/Farfbuzz.Facade.Consumer.csproj" />
+    <Project Path="tests/Farfbuzz.Facade.Probe/Farfbuzz.Facade.Probe.fsproj" />
+    <Project Path="tests/Farfbuzz.HarfBuzzSharp.Binding/ConsumerLib/ConsumerLib.csproj" />
+    <Project Path="tests/Farfbuzz.HarfBuzzSharp.CSharpProbe/Farfbuzz.HarfBuzzSharp.CSharpProbe.csproj" />
+    <Project Path="tests/Farfbuzz.HarfBuzzSharp.Binding/Host/Host.csproj" />
+    <Project Path="tests/Farfbuzz.HarfBuzzSharp.Equivalence/Farfbuzz.HarfBuzzSharp.Equivalence.fsproj" />
+    <Project Path="tests/Farfbuzz.HarfBuzzSharp.Tests/Farfbuzz.HarfBuzzSharp.Tests.fsproj" />
+    <Project Path="tests/Farfbuzz.Harness/Farfbuzz.Harness.fsproj" />
+    <Project Path="tests/Farfbuzz.Oracle/Farfbuzz.Oracle.fsproj" />
+    <Project Path="tests/Farfbuzz.PublicApi/Farfbuzz.PublicApi.fsproj" />
+    <Project Path="tests/Farfbuzz.Smoke/Farfbuzz.Smoke.fsproj" />
+    <Project Path="tests/Farfbuzz.Tests/Farfbuzz.Tests.fsproj" />
+  </Folder>
+</Solution>

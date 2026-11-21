@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>net10.0</TargetFrameworks>
+        <TargetFrameworks Condition="'$(FarfbuzzWasm)' == 'true'">net10.0;net10.0-browser</TargetFrameworks>
+        <OutputType>Exe</OutputType>
+        <Nullable>disable</Nullable>
+        <IsPackable>false</IsPackable>
+        <GenerateDocumentationFile>false</GenerateDocumentationFile>
+        <ConsumerLibPath>$(MSBuildThisFileDirectory)../../../artifacts/bin/ConsumerLib/release/ConsumerLib.dll</ConsumerLibPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0'">
+        <PublishAot>true</PublishAot>
+        <IlcTreatWarningsAsErrors>false</IlcTreatWarningsAsErrors>
+        <ILLinkTreatWarningsAsErrors>false</ILLinkTreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0-browser'">
+        <RuntimeIdentifier>browser-wasm</RuntimeIdentifier>
+        <WasmMainJSPath>main.mjs</WasmMainJSPath>
+        <WasmEnableThreads>false</WasmEnableThreads>
+        <WasmEmitSymbolMap>false</WasmEmitSymbolMap>
+        <PublishTrimmed>true</PublishTrimmed>
+        <ILLinkTreatWarningsAsErrors>false</ILLinkTreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(TargetFramework)' == 'net10.0-browser'">
+        <WasmExtraFilesToDeploy Include="main.mjs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="ConsumerLib">
+            <HintPath>$(ConsumerLibPath)</HintPath>
+        </Reference>
+        <ProjectReference Include="../ConsumerLib/ConsumerLib.csproj" ReferenceOutputAssembly="false" />
+        <ProjectReference Include="../../../src/Farfbuzz.HarfBuzzSharp/Farfbuzz.HarfBuzzSharp.csproj" />
+    </ItemGroup>
+</Project>

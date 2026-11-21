@@ -1,0 +1,121 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <IsPackable>false</IsPackable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <ServerGarbageCollection>false</ServerGarbageCollection>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Differential.fs" />
+        <Compile Include="OracleTests.fs" />
+        <Compile Include="TextFormatDiff.fs" />
+        <Compile Include="HarfBuzzSharpShaper.fs" />
+        <Compile Include="RunTestsEquality.fs" />
+        <Compile Include="AdapterDiff.fs" />
+        <Compile Include="TestFonts.fs" />
+        <Compile Include="OracleFaces.fs" />
+        <Compile Include="FaceDiff.fs" />
+        <Compile Include="MetricsDiff.fs" />
+        <Compile Include="FontDiff.fs" />
+        <Compile Include="CommonDiff.fs" />
+        <Compile Include="OtTagDiff.fs" />
+        <Compile Include="UnicodeDiff.fs" />
+        <Compile Include="ComposeDiff.fs" />
+        <Compile Include="UnicodePredicateDiff.fs" />
+        <Compile Include="TextEntryDiff.fs" />
+        <Compile Include="GlyphRunDiff.fs" />
+        <Compile Include="RunPassDiff.fs" />
+        <Compile Include="CmapDiff.fs" />
+        <Compile Include="CollectDiff.fs" />
+        <Compile Include="GlyphNameDiff.fs" />
+        <Compile Include="Mutate.fs" />
+        <Compile Include="MutationDiff.fs" />
+        <Compile Include="RandomTextDiff.fs" />
+        <Compile Include="NoLayoutFonts.fs" />
+        <Compile Include="ShapeGens.fs" />
+        <Compile Include="ShapeDiff.fs" />
+        <Compile Include="NormalizeDiff.fs" />
+        <Compile Include="ExtentsDiff.fs" />
+        <Compile Include="Var/FvarDiff.fs" />
+        <Compile Include="Gens.fs" />
+        <Compile Include="Var/NormalizeCoordsDiff.fs" />
+        <Compile Include="Var/ItemVariationStoreDiff.fs" />
+        <Compile Include="Var/FontVariationsDiff.fs" />
+        <Compile Include="Var/HvarDiff.fs" />
+        <Compile Include="Var/TupleVariationDiff.fs" />
+        <Compile Include="Aat/AatLookupDiff.fs" />
+        <Compile Include="LayoutCommonDiff.fs" />
+        <Compile Include="GdefDiff.fs" />
+        <Compile Include="LayoutGens.fs" />
+        <Compile Include="LayoutTableDiff.fs" />
+        <Compile Include="MapDiff.fs" />
+        <Compile Include="AccelDiff.fs" />
+        <Compile Include="GsubDiff.fs" />
+        <Compile Include="Aat/StateTableDiff.fs" />
+        <Compile Include="Aat/AatMapDiff.fs" />
+        <Compile Include="Aat/TrakDiff.fs" />
+        <Compile Include="Aat/MorxDiff.fs" />
+        <Compile Include="../Farfbuzz.Tests/Aat/AnchorTables.fs" Link="Aat/AnchorTables.fs" />
+        <Compile Include="Aat/KerxDiff.fs" />
+        <Compile Include="Aat/MacosDiff.fs" />
+        <Compile Include="Aat/FeatApiDiff.fs" />
+        <Compile Include="ComplexShapers/IndicTableDiff.fs" />
+        <Compile Include="ComplexShapers/UseTableDiff.fs" />
+        <Compile Include="ComplexShapers/ArabicTableDiff.fs" />
+        <Compile Include="ComplexShapers/ArabicJoiningListDiff.fs" />
+        <Compile Include="Glyph/GlyphPointsDiff.fs" />
+        <Compile Include="ComplexShapers/VowelConstraintsDiff.fs" />
+        <Compile Include="ComplexShapers/SyllableDiff.fs" />
+        <Compile Include="ComplexShapers/SyllabicDiff.fs" />
+        <Compile Include="ComplexShapers/CategorizeDiff.fs" />
+        <Compile Include="ComplexShapers/ShapeDiff.fs" />
+        <Compile Include="ComplexShapers/TraceDiff.fs" />
+        <Compile Include="ComplexShapers/PlanDiff.fs" />
+        <Compile Include="ComplexShapers/HebrewThaiDiff.fs" />
+        <Compile Include="ComplexShapers/FallbackDiff.fs" />
+        <Compile Include="ComplexShapers/HangulKhmerDiff.fs" />
+        <Compile Include="ComplexShapers/IndicDiff.fs" />
+        <Compile Include="ComplexShapers/UseDiff.fs" />
+        <Compile Include="ComplexShapers/DefaultShaperDiff.fs" />
+        <Compile Include="ComplexShapers/MyanmarDiff.fs" />
+        <Compile Include="ComplexShapers/ArabicDiff.fs" />
+        <Compile Include="Var/GvarDiff.fs" />
+        <Compile Include="Glyph/GlyphOutlineDiff.fs" />
+        <Compile Include="Glyph/BitmapExtentsDiff.fs" />
+        <Compile Include="Glyph/ColrExtentsDiff.fs" />
+        <Compile Include="Glyph/Cff1ExtentsDiff.fs" />
+        <Compile Include="Glyph/Cff2ExtentsDiff.fs" />
+        <Compile Include="Glyph/FontOpsDiff.fs" />
+        <Compile Include="Var/MvarDiff.fs" />
+        <Compile Include="Var/FeatureVariationsDiff.fs" />
+        <Compile Include="Var/VariationDeviceDiff.fs" />
+        <Compile Include="ShapePlanDiff.fs" />
+        <Compile Include="FallbackMarkDiff.fs" />
+        <Compile Include="KernDiff.fs" />
+        <Compile Include="GposDiff.fs" />
+        <Compile Include="ContextDiff.fs" />
+        <Compile Include="GposAttachDiff.fs" />
+        <Compile Include="GposContextDiff.fs" />
+        <Compile Include="GposAttachSynthDiff.fs" />
+        <Compile Include="BudgetDiff.fs" />
+        <Compile Include="Main.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Expecto" />
+        <PackageReference Include="Expecto.FsCheck" />
+        <PackageReference Include="FsCheck" />
+        <PackageReference Include="HarfBuzzSharp" />
+        <PackageReference Include="HarfBuzzSharp.NativeAssets.macOS" />
+        <PackageReference Include="HarfBuzzSharp.NativeAssets.Linux" />
+        <PackageReference Include="HarfBuzzSharp.NativeAssets.Win32" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../src/Farfbuzz/Farfbuzz.fsproj" />
+        <ProjectReference Include="../Farfbuzz.Harness/Farfbuzz.Harness.fsproj" />
+        <ProjectReference Include="../Farfbuzz.Oracle/Farfbuzz.Oracle.fsproj" />
+    </ItemGroup>
+</Project>

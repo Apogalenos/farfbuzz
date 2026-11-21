@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 756" width="880" height="756" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif">
+  <title id="t">Farfbuzz time against HarfBuzz and HarfBuzzSharp, text by text</title>
+  <desc id="d">Lower is better: bars shorter than the 1× line mean Farfbuzz takes less time. Roboto, English prose: 0.78× HarfBuzz 15.1.0 on .NET 10, 0.34× the HarfBuzzSharp 14.4.0 package on NativeAOT; Roboto, English words: 0.62× HarfBuzz 15.1.0 on .NET 10, 0.44× the HarfBuzzSharp 14.4.0 package on NativeAOT; Source Serif variable: 0.80× HarfBuzz 15.1.0 on .NET 10, 0.80× the HarfBuzzSharp 14.4.0 package on NativeAOT; Noto Sans Devanagari: 1.32× HarfBuzz 15.1.0 on .NET 10, 1.35× the HarfBuzzSharp 14.4.0 package on NativeAOT; Amiri, Persian prose: 1.15× HarfBuzz 15.1.0 on .NET 10, 1.07× the HarfBuzzSharp 14.4.0 package on NativeAOT; Nastaliq, Persian prose: 1.46× HarfBuzz 15.1.0 on .NET 10, 0.71× the HarfBuzzSharp 14.4.0 package on NativeAOT; Nastaliq, Persian words: 1.54× HarfBuzz 15.1.0 on .NET 10, 0.77× the HarfBuzzSharp 14.4.0 package on NativeAOT; Gulzar, Persian prose: 1.27× HarfBuzz 15.1.0 on .NET 10, 0.40× the HarfBuzzSharp 14.4.0 package on NativeAOT; Gulzar, Persian words: 1.34× HarfBuzz 15.1.0 on .NET 10, 0.44× the HarfBuzzSharp 14.4.0 package on NativeAOT; Noto Sans Duployan: 1.38× HarfBuzz 15.1.0 on .NET 10, 0.70× the HarfBuzzSharp 14.4.0 package on NativeAOT.</desc>
+  <rect width="880" height="756" rx="22" fill="#1c1c1e"/>
+  <text x="40" y="52" font-size="22" font-weight="600" fill="#f5f5f7" text-anchor="start" letter-spacing="-0.2">Farfbuzz time, text by text</text>
+  <text x="40" y="76" font-size="14" font-weight="400" fill="#a1a1a6" text-anchor="start">Lower is better. Farfbuzz time divided by the other library’s time: left of the 1× line, Farfbuzz is faster</text>
+  <rect x="300" y="102" width="290.0" height="542" fill="#8F7BFF" fill-opacity="0.12"/>
+  <rect x="300.0" y="102" width="1" height="542" fill="#3a3a3c"/>
+  <text x="300.0" y="666" font-size="12" font-weight="400" fill="#a1a1a6" text-anchor="middle">0</text>
+  <rect x="445.0" y="102" width="1" height="542" fill="#3a3a3c"/>
+  <text x="445.0" y="666" font-size="12" font-weight="400" fill="#a1a1a6" text-anchor="middle">0.5×</text>
+  <rect x="589.5" y="102" width="2" height="542" fill="#f5f5f7"/>
+  <text x="590.0" y="666" font-size="12" font-weight="600" fill="#f5f5f7" text-anchor="middle">1×</text>
+  <rect x="735.0" y="102" width="1" height="542" fill="#3a3a3c"/>
+  <text x="735.0" y="666" font-size="12" font-weight="400" fill="#a1a1a6" text-anchor="middle">1.5×</text>
+  <text x="445.0" y="684" font-size="12" font-weight="600" fill="#8F7BFF" text-anchor="middle">Farfbuzz faster</text>
+  <text x="677.0" y="684" font-size="12" font-weight="600" fill="#a1a1a6" text-anchor="middle">Farfbuzz slower</text>
+  <text x="40" y="133" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, English prose</text>
+  <path d="M300 112 H523.2 Q526.2 112 526.2 115 V125 Q526.2 128 523.2 128 H300 Z" fill="#8F7BFF"/>
+  <text x="534.2" y="125" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start">0.78×</text>
+  <path d="M300 131 H395.6 Q398.6 131 398.6 134 V144 Q398.6 147 395.6 147 H300 Z" fill="#3CC9B4"/>
+  <text x="406.6" y="144" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start">0.34×</text>
+  <text x="40" y="187" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Roboto, English words</text>
+  <path d="M300 166 H476.8 Q479.8 166 479.8 169 V179 Q479.8 182 476.8 182 H300 Z" fill="#8F7BFF"/>
+  <text x="487.8" y="179" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start">0.62×</text>
+  <path d="M300 185 H424.6 Q427.6 185 427.6 188 V198 Q427.6 201 424.6 201 H300 Z" fill="#3CC9B4"/>
+  <text x="435.6" y="198" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start">0.44×</text>
+  <text x="40" y="241" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Source Serif variable</text>
+  <path d="M300 220 H529.0 Q532.0 220 532.0 223 V233 Q532.0 236 529.0 236 H300 Z" fill="#8F7BFF"/>
+  <text x="540.0" y="233" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start">0.80×</text>
+  <path d="M300 239 H529.0 Q532.0 239 532.0 242 V252 Q532.0 255 529.0 255 H300 Z" fill="#3CC9B4"/>
+  <text x="540.0" y="252" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start">0.80×</text>
+  <text x="40" y="295" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans Devanagari</text>
+  <path d="M300 274 H679.8 Q682.8 274 682.8 277 V287 Q682.8 290 679.8 290 H300 Z" fill="#8F7BFF"/>
+  <text x="690.8" y="287" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start">1.32×</text>
+  <path d="M300 293 H688.5 Q691.5 293 691.5 296 V306 Q691.5 309 688.5 309 H300 Z" fill="#3CC9B4"/>
+  <text x="699.5" y="306" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start">1.35×</text>
+  <text x="40" y="349" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Amiri, Persian prose</text>
+  <path d="M300 328 H630.5 Q633.5 328 633.5 331 V341 Q633.5 344 630.5 344 H300 Z" fill="#8F7BFF"/>
+  <text x="641.5" y="341" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start">1.15×</text>
+  <path d="M300 347 H607.3 Q610.3 347 610.3 350 V360 Q610.3 363 607.3 363 H300 Z" fill="#3CC9B4"/>
+  <text x="618.3" y="360" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start">1.07×</text>
+  <text x="40" y="403" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Nastaliq, Persian prose</text>
+  <path d="M300 382 H720.4 Q723.4 382 723.4 385 V395 Q723.4 398 720.4 398 H300 Z" fill="#8F7BFF"/>
+  <text x="731.4" y="395" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start">1.46×</text>
+  <path d="M300 401 H502.9 Q505.9 401 505.9 404 V414 Q505.9 417 502.9 417 H300 Z" fill="#3CC9B4"/>
+  <text x="513.9" y="414" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start">0.71×</text>
+  <text x="40" y="457" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Nastaliq, Persian words</text>
+  <path d="M300 436 H743.6 Q746.6 436 746.6 439 V449 Q746.6 452 743.6 452 H300 Z" fill="#8F7BFF"/>
+  <text x="754.6" y="449" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start">1.54×</text>
+  <path d="M300 455 H520.3 Q523.3 455 523.3 458 V468 Q523.3 471 520.3 471 H300 Z" fill="#3CC9B4"/>
+  <text x="531.3" y="468" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start">0.77×</text>
+  <text x="40" y="511" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Gulzar, Persian prose</text>
+  <path d="M300 490 H665.3 Q668.3 490 668.3 493 V503 Q668.3 506 665.3 506 H300 Z" fill="#8F7BFF"/>
+  <text x="676.3" y="503" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start">1.27×</text>
+  <path d="M300 509 H413.0 Q416.0 509 416.0 512 V522 Q416.0 525 413.0 525 H300 Z" fill="#3CC9B4"/>
+  <text x="424.0" y="522" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start">0.40×</text>
+  <text x="40" y="565" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Gulzar, Persian words</text>
+  <path d="M300 544 H685.6 Q688.6 544 688.6 547 V557 Q688.6 560 685.6 560 H300 Z" fill="#8F7BFF"/>
+  <text x="696.6" y="557" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start">1.34×</text>
+  <path d="M300 563 H424.6 Q427.6 563 427.6 566 V576 Q427.6 579 424.6 579 H300 Z" fill="#3CC9B4"/>
+  <text x="435.6" y="576" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start">0.44×</text>
+  <text x="40" y="619" font-size="15" font-weight="600" fill="#f5f5f7" text-anchor="start">Noto Sans Duployan</text>
+  <path d="M300 598 H697.2 Q700.2 598 700.2 601 V611 Q700.2 614 697.2 614 H300 Z" fill="#8F7BFF"/>
+  <text x="708.2" y="611" font-size="13" font-weight="600" fill="#8F7BFF" text-anchor="start">1.38×</text>
+  <path d="M300 617 H500.0 Q503.0 617 503.0 620 V630 Q503.0 633 500.0 633 H300 Z" fill="#3CC9B4"/>
+  <text x="511.0" y="630" font-size="13" font-weight="600" fill="#3CC9B4" text-anchor="start">0.70×</text>
+  <rect x="40" y="712" width="12" height="12" rx="3" fill="#8F7BFF"/>
+  <text x="60" y="722" font-size="13" font-weight="400" fill="#f5f5f7" text-anchor="start">against HarfBuzz 15.1.0’s C++, .NET 10 with the JIT</text>
+  <rect x="430" y="712" width="12" height="12" rx="3" fill="#3CC9B4"/>
+  <text x="450" y="722" font-size="13" font-weight="400" fill="#f5f5f7" text-anchor="start">against the HarfBuzzSharp 14.4.0 package, NativeAOT</text>
+</svg>

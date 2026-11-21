@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <IsTrimmable>true</IsTrimmable>
+        <IsAotCompatible>true</IsAotCompatible>
+        <Optimize>true</Optimize>
+        <OtherFlags>$(OtherFlags) --reflectionfree</OtherFlags>
+        <PackageId>Farfbuzz.HarfBuzzSharp.Bridge</PackageId>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageIcon>farfbuzz-128.png</PackageIcon>
+        <PackageTags>harfbuzz;harfbuzzsharp;text-shaping;dotnet;fsharp;managed</PackageTags>
+        <Description>The F# bridge between the HarfBuzzSharp-compatible C# shell and the Farfbuzz core: pure functions with C#-friendly shapes.</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Text.fs" />
+        <Compile Include="Segments.fs" />
+        <Compile Include="Features.fs" />
+        <Compile Include="Faces.fs" />
+        <Compile Include="Fonts.fs" />
+        <Compile Include="Glyphs.fs" />
+        <Compile Include="Metrics.fs" />
+        <Compile Include="FontFuncs.fs" />
+        <Compile Include="UnicodeFuncs.fs" />
+        <Compile Include="Serialization.fs" />
+        <Compile Include="Variations.fs" />
+        <Compile Include="Shaping.fs" />
+        <Compile Include="AdapterRuns.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="../../assets/farfbuzz-128.png" Pack="true" PackagePath="/" Visible="false" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../Farfbuzz/Farfbuzz.fsproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="HarfBuzzSharp" Key="002400000480000094000000060200000024000052534131000400000100010079159977d2d03a8e6bea7a2e74e8d1afcc93e8851974952bb480a12c9134474d04062447c37e0e68c080536fcf3c3fbe2ff9c979ce998475e506e8ce82dd5b0f350dc10e93bf2eeecf874b24770c5081dbea7447fddafa277b22de47d6ffea449674a4f9fccf84d15069089380284dbdd35f46cdff12a1bd78e4ef0065d016df" />
+        <InternalsVisibleTo Include="Farfbuzz.Avalonia" />
+        <InternalsVisibleTo Include="Farfbuzz.HarfBuzzSharp.Tests" />
+    </ItemGroup>
+</Project>

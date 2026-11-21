@@ -1,0 +1,23 @@
+<Project>
+    <PropertyGroup>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageVersion Include="FSharp.Core" Version="10.1.401" />
+        <PackageVersion Include="Expecto" Version="11.1.1" />
+        <PackageVersion Include="Expecto.FsCheck" Version="11.1.1" />
+        <PackageVersion Include="FsCheck" Version="3.6.0" />
+        <PackageVersion Include="Mono.Cecil" Version="0.11.6" />
+        <PackageVersion Include="BenchmarkDotNet" Version="0.15.8" />
+        <PackageVersion Include="HarfBuzzSharp" Version="14.4.0" />
+        <PackageVersion Include="HarfBuzzSharp.NativeAssets.macOS" Version="14.4.0" />
+        <PackageVersion Include="HarfBuzzSharp.NativeAssets.Linux" Version="14.4.0" />
+        <PackageVersion Include="HarfBuzzSharp.NativeAssets.Win32" Version="14.4.0" />
+        <PackageVersion Include="HarfBuzzSharp.NativeAssets.WebAssembly" Version="14.4.0" />
+        <PackageVersion Include="SkiaSharp.HarfBuzz" Version="3.119.1" />
+        <PackageVersion Include="SkiaSharp.NativeAssets.macOS" Version="3.119.1" />
+        <PackageVersion Include="SkiaSharp.NativeAssets.Linux" Version="3.119.1" />
+        <PackageVersion Include="SkiaSharp.NativeAssets.Win32" Version="3.119.1" />
+        <PackageVersion Include="Topten.RichTextKit" Version="0.4.167" />
+    </ItemGroup>
+</Project>

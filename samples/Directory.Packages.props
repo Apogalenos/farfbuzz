@@ -1,0 +1,9 @@
+<Project>
+    <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Packages.props', '$(MSBuildThisFileDirectory)../'))" />
+    <ItemGroup>
+        <PackageVersion Include="Avalonia" Version="11.3.13" />
+        <PackageVersion Include="Avalonia.Skia" Version="11.3.13" />
+        <PackageVersion Include="Avalonia.Headless" Version="11.3.13" />
+        <PackageVersion Include="Avalonia.Browser" Version="11.3.13" />
+    </ItemGroup>
+</Project>

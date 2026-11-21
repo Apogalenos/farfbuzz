@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <!--
+        Installs the facade as a NuGet consumer would: one reference to the Farfbuzz.HarfBuzzSharp package, whatever version the
+        build has just packed, restored with its dependencies from that folder. Not in Farfbuzz.slnx: it can only restore after
+        the pack step of `build.fsx package`.
+    -->
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>disable</Nullable>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Farfbuzz.HarfBuzzSharp" Version="*-*" />
+    </ItemGroup>
+</Project>

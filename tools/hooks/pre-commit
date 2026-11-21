@@ -1,0 +1,4 @@
+#!/bin/sh
+# Farfbuzz pre-commit hook: the guard of AGENTS.md. Install with `dotnet fsi build.fsx install-hooks`.
+unset GIT_DIR GIT_WORK_TREE GIT_INDEX_FILE GIT_PREFIX
+exec dotnet fsi build.fsx guard

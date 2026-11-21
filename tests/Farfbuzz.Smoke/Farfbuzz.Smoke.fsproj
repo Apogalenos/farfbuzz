@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>net10.0</TargetFrameworks>
+        <TargetFrameworks Condition="'$(FarfbuzzWasm)' == 'true'">net10.0;net10.0-browser</TargetFrameworks>
+        <OutputType>Exe</OutputType>
+        <IsPackable>false</IsPackable>
+        <OtherFlags>$(OtherFlags) --reflectionfree</OtherFlags>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0'">
+        <PublishAot>true</PublishAot>
+        <TrimmerSingleWarn>false</TrimmerSingleWarn>
+        <IlcTreatWarningsAsErrors>false</IlcTreatWarningsAsErrors>
+        <ILLinkTreatWarningsAsErrors>false</ILLinkTreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0-browser'">
+        <RuntimeIdentifier>browser-wasm</RuntimeIdentifier>
+        <WasmMainJSPath>main.mjs</WasmMainJSPath>
+        <WasmEnableThreads>false</WasmEnableThreads>
+        <WasmEmitSymbolMap>false</WasmEmitSymbolMap>
+        <PublishTrimmed>true</PublishTrimmed>
+        <TrimMode>full</TrimMode>
+        <TrimmerSingleWarn>false</TrimmerSingleWarn>
+        <ILLinkTreatWarningsAsErrors>false</ILLinkTreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Probes.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(TargetFramework)' == 'net10.0-browser'">
+        <WasmExtraFilesToDeploy Include="main.mjs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../src/Farfbuzz/Farfbuzz.fsproj" />
+    </ItemGroup>
+</Project>

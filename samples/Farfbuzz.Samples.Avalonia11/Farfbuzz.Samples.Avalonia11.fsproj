@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <GenerateDocumentationFile>false</GenerateDocumentationFile>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Corpus.fs" />
+        <Compile Include="App.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AvaloniaResource Include="Assets/*.ttf" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" />
+        <PackageReference Include="Avalonia.Skia" />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(UseFarfbuzz)' == 'true'">
+        <ProjectReference Include="../../src/Farfbuzz.HarfBuzzSharp/Farfbuzz.HarfBuzzSharp.csproj" />
+    </ItemGroup>
+</Project>

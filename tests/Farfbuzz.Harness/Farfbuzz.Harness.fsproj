@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="RepositoryPaths.fs" />
+        <Compile Include="Suites.fs" />
+        <Compile Include="TestFile.fs" />
+        <Compile Include="ShapeRequest.fs" />
+        <Compile Include="Shaper.fs" />
+        <Compile Include="TailCalls.fs" />
+        <Compile Include="FarfbuzzShaper.fs" />
+        <Compile Include="Runner.fs" />
+        <Compile Include="Ratchet.fs" />
+        <Compile Include="Report.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../src/Farfbuzz/Farfbuzz.fsproj" />
+    </ItemGroup>
+</Project>

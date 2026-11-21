@@ -1,0 +1,169 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <IsPackable>false</IsPackable>
+        <ServerGarbageCollection>false</ServerGarbageCollection>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Allocation.fs" />
+        <Compile Include="TagTests.fs" />
+        <Compile Include="FunctionalTests.fs" />
+        <Compile Include="GlyphTests.fs" />
+        <Compile Include="NumberTests.fs" />
+        <Compile Include="FeatureTests.fs" />
+        <Compile Include="VariationTests.fs" />
+        <Compile Include="SerializeTests.fs" />
+        <Compile Include="SfntBuilder.fs" />
+        <Compile Include="UpstreamFiles.fs" />
+        <Compile Include="FaceTests.fs" />
+        <Compile Include="CmapSubtableTests.fs" />
+        <Compile Include="CmapTests.fs" />
+        <Compile Include="CmapLowTableTests.fs" />
+        <Compile Include="CollectTests.fs" />
+        <Compile Include="PostTests.fs" />
+        <Compile Include="CffDictTests.fs" />
+        <Compile Include="Cff1Tests.fs" />
+        <Compile Include="GlyphNameTests.fs" />
+        <Compile Include="NeverThrows.fs" />
+        <Compile Include="ManifestTests.fs" />
+        <Compile Include="GeneratedTests.fs" />
+        <Compile Include="MetricsTests.fs" />
+        <Compile Include="CommonTests.fs" />
+        <Compile Include="UcdTablesTests.fs" />
+        <Compile Include="UnicodeTests.fs" />
+        <Compile Include="NormalizationDataTests.fs" />
+        <Compile Include="UnicodePredicateTests.fs" />
+        <Compile Include="UtfTests.fs" />
+        <Compile Include="GlyphRunTests.fs" />
+        <Compile Include="RunPassTests.fs" />
+        <Compile Include="PropsMovementTests.fs" />
+        <Compile Include="TagRegistryTests.fs" />
+        <Compile Include="OtTagTableTests.fs" />
+        <Compile Include="OtTagTests.fs" />
+        <Compile Include="FontTests.fs" />
+        <Compile Include="FontFuncsTests.fs" />
+        <Compile Include="HarnessTests.fs" />
+        <Compile Include="TailCallTests.fs" />
+        <Compile Include="Shape/PlanTests.fs" />
+        <Compile Include="Shape/PropsTests.fs" />
+        <Compile Include="Shape/NormalizeTests.fs" />
+        <Compile Include="Shape/Perf3Tests.fs" />
+        <Compile Include="Shape/Perf5Tests.fs" />
+        <Compile Include="Shape/GraphemeTests.fs" />
+        <Compile Include="Shape/PositionTests.fs" />
+        <Compile Include="Shape/ApiShapeTests.fs" />
+        <Compile Include="Shape/FallbackTests.fs" />
+        <Compile Include="Shape/PlanKeyTests.fs" />
+        <Compile Include="Shape/ShapeManyTests.fs" />
+        <Compile Include="Shape/LineShapeTests.fs" />
+        <Compile Include="Shape/LineShapeAllocationTests.fs" />
+        <Compile Include="Shape/PerfS11Tests.fs" />
+        <Compile Include="Shape/Perf7Tests.fs" />
+        <Compile Include="Shape/Perf10Tests.fs" />
+        <Compile Include="Shape/SimpleRunTests.fs" />
+        <Compile Include="Shape/GeneralLineTests.fs" />
+        <Compile Include="Shape/VerifyTests.fs" />
+        <Compile Include="Shape/LookupKernelTests.fs" />
+        <Compile Include="Glyph/ExtentsTests.fs" />
+        <Compile Include="Glyph/BitmapExtentsTests.fs" />
+        <Compile Include="Glyph/ColrExtentsTests.fs" />
+        <Compile Include="Layout/CommonTests.fs" />
+        <Compile Include="Layout/GdefTests.fs" />
+        <Compile Include="Layout/LayoutTableTests.fs" />
+        <Compile Include="Layout/MapTests.fs" />
+        <Compile Include="Layout/MatchingTests.fs" />
+        <Compile Include="Layout/EngineTests.fs" />
+        <Compile Include="Layout/FallbackMarkTests.fs" />
+        <Compile Include="Layout/KernTests.fs" />
+        <Compile Include="Layout/GposPairTests.fs" />
+        <Compile Include="Layout/GposPairLoopTests.fs" />
+        <Compile Include="Layout/GposAttachTests.fs" />
+        <Compile Include="Layout/GsubSimpleTests.fs" />
+        <Compile Include="Layout/LigatureTests.fs" />
+        <Compile Include="Layout/ContextTests.fs" />
+        <Compile Include="Layout/DirectTableTests.fs" />
+        <Compile Include="Layout/GposContextTests.fs" />
+        <Compile Include="Layout/ApiLayoutTests.fs" />
+        <Compile Include="ComplexShapers/RagelTableTests.fs" />
+        <Compile Include="ComplexShapers/ArabicWin1256Tests.fs" />
+        <Compile Include="ComplexShapers/SyllableTests.fs" />
+        <Compile Include="ComplexShapers/SyllableEditTests.fs" />
+        <Compile Include="ComplexShapers/ShaperRecordTests.fs" />
+        <Compile Include="ComplexShapers/Conformance.fs" />
+        <Compile Include="ComplexShapers/ShaperTestSupport.fs" />
+        <Compile Include="ComplexShapers/HebrewTests.fs" />
+        <Compile Include="ComplexShapers/ThaiTests.fs" />
+        <Compile Include="ComplexShapers/FallbackShaperTests.fs" />
+        <Compile Include="ComplexShapers/HangulTests.fs" />
+        <Compile Include="ComplexShapers/KhmerTests.fs" />
+        <Compile Include="ComplexShapers/MyanmarTests.fs" />
+        <Compile Include="ComplexShapers/ArabicTests.fs" />
+        <Compile Include="ComplexShapers/ArabicMaskSetTests.fs" />
+        <Compile Include="ComplexShapers/LigatureSubtableTests.fs" />
+        <Compile Include="ComplexShapers/IndicTests.fs" />
+        <Compile Include="ComplexShapers/UseTests.fs" />
+        <Compile Include="ComplexShapers/ShaperHooksTests.fs" />
+        <Compile Include="ComplexShapers/WouldSubstituteTests.fs" />
+        <Compile Include="ComplexShapers/ComplexRouteTests.fs" />
+        <Compile Include="ComplexShapers/DefaultShaperTests.fs" />
+        <Compile Include="Glyph/GlyphPointsTests.fs" />
+        <Compile Include="Glyph/GlyphOutlineTests.fs" />
+        <Compile Include="Glyph/Cff1ExtentsTests.fs" />
+        <Compile Include="Glyph/Cff2ExtentsTests.fs" />
+        <Compile Include="Glyph/CffBoundsKernelTests.fs" />
+        <Compile Include="Glyph/FontOpsTests.fs" />
+        <Compile Include="ConformanceTests.fs" />
+        <Compile Include="Var/FvarTests.fs" />
+        <Compile Include="Var/AvarTests.fs" />
+        <Compile Include="Var/ItemVariationStoreTests.fs" />
+        <Compile Include="Var/FontVariationsTests.fs" />
+        <Compile Include="Var/HvarTests.fs" />
+        <Compile Include="Var/TupleVariationTests.fs" />
+        <Compile Include="Var/GvarTests.fs" />
+        <Compile Include="Var/MvarTests.fs" />
+        <Compile Include="Var/ConditionTests.fs" />
+        <Compile Include="Var/VariationDeviceTests.fs" />
+        <Compile Include="Var/VariableKernelTests.fs" />
+        <Compile Include="Aat/AatLookupTests.fs" />
+        <Compile Include="Aat/StateTableTests.fs" />
+        <Compile Include="Aat/AatMapTests.fs" />
+        <Compile Include="Aat/TrakTests.fs" />
+        <Compile Include="Aat/RunPassAatTests.fs" />
+        <Compile Include="Aat/DriverTests.fs" />
+        <Compile Include="Aat/MorxTests.fs" />
+        <Compile Include="Aat/MorxStateMachineTests.fs" />
+        <Compile Include="Aat/LigatureTests.fs" />
+        <Compile Include="Aat/InsertionTests.fs" />
+        <Compile Include="Aat/KerxTests.fs" />
+        <Compile Include="Aat/KerxFormat1Tests.fs" />
+        <Compile Include="Aat/AnchorTables.fs" />
+        <Compile Include="Aat/LiteralDrive.fs" />
+        <Compile Include="Aat/KerxFormat4Tests.fs" />
+        <Compile Include="Aat/AatApiTests.fs" />
+        <Compile Include="Aat/AatKernelTests.fs" />
+        <Compile Include="Aat/AatSessionTests.fs" />
+        <Compile Include="Api/VarCoordsTests.fs" />
+        <Compile Include="Api/MetricsTtVarTests.fs" />
+        <Compile Include="Api/MetricsVarTests.fs" />
+        <Compile Include="Shape/ColdWarmTests.fs" />
+        <Compile Include="Shape/SyllableReuseTests.fs" />
+        <Compile Include="AcceleratorTests.fs" />
+        <Compile Include="AllocationTests.fs" />
+        <Compile Include="Main.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Expecto" />
+        <PackageReference Include="Expecto.FsCheck" />
+        <PackageReference Include="FsCheck" />
+        <PackageReference Include="Mono.Cecil" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../src/Farfbuzz/Farfbuzz.fsproj" />
+        <ProjectReference Include="../../tools/Farfbuzz.Gen/Farfbuzz.Gen.fsproj" />
+        <ProjectReference Include="../Farfbuzz.Harness/Farfbuzz.Harness.fsproj" />
+    </ItemGroup>
+</Project>
